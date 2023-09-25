@@ -1,0 +1,27 @@
+* File: nand.pex.netlist
+* Created: Sun May  7 21:55:56 2023
+* Program "Calibre xRC"
+* Version "v2017.4_19.14"
+* 
+.include "nand.pex.netlist.pex"
+.subckt nand  A B OUT_2 VDD GND   
+* 
+* VDD	VDD
+* A	A
+* OUT_2	OUT_2
+* GND	GND
+* B	B
+MnMos2 N_NMOS2_D_MnMos2_d N_B_MnMos2_g N_GND_MnMos2_s N_GND_MnMos2_b N_18
++ L=1.8e-07 W=5e-07 AD=2.45e-13 AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+MnMos1 N_OUT_2_MnMos1_d N_A_MnMos1_g N_NMOS2_D_MnMos1_s N_GND_MnMos2_b N_18
++ L=1.8e-07 W=5e-07 AD=2.45e-13 AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+MpMos2 N_OUT_2_MpMos2_d N_B_MpMos2_g N_VDD_MpMos2_s N_VDD_MpMos2_b P_18
++ L=1.8e-07 W=1e-06 AD=4.9e-13 AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+MpMos1 N_OUT_2_MpMos1_d N_A_MpMos1_g N_VDD_MpMos1_s N_VDD_MpMos1_b P_18
++ L=1.8e-07 W=1e-06 AD=4.9e-13 AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+*
+.include "nand.pex.netlist.NAND.pxi"
+*
+.ends
+*
+*

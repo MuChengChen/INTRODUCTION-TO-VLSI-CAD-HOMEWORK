@@ -1,0 +1,11 @@
+* File: nand.pex.netlist.NAND.pxi
+* Created: Sun May  7 21:55:56 2023
+* 
+x_PM_NAND%B N_B_MnMos2_g N_B_MpMos2_g B PM_NAND%B
+x_PM_NAND%GND N_GND_MnMos2_b N_GND_MnMos2_s GND PM_NAND%GND
+x_PM_NAND%OUT_2 OUT_2 N_OUT_2_MpMos2_d N_OUT_2_MpMos1_d N_OUT_2_MnMos1_d
++ PM_NAND%OUT_2
+x_PM_NAND%A N_A_MnMos1_g N_A_MpMos1_g A PM_NAND%A
+x_PM_NAND%NMOS2_D N_NMOS2_D_MnMos2_d N_NMOS2_D_MnMos1_s PM_NAND%NMOS2_D
+x_PM_NAND%VDD N_VDD_MpMos2_b N_VDD_MpMos1_b N_VDD_MpMos2_s N_VDD_MpMos1_s VDD
++ PM_NAND%VDD
