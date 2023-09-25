@@ -1,0 +1,9 @@
+*design* DebussyLib (btIdent Verdi_N-2017.12)
+Command arguments:
+    +define+verilog
+    /home/user2/vlsi23/vlsi23100/Lab5/ProbB/mini_vending.v
+
+Highest level modules:
+mini_vending
+
+Total	0 error(s),   0 warning(s)

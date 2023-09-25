@@ -1,0 +1,7 @@
+//
+// File created by:  xmverilog
+// Do not modify this file
+//
+det_seq_tb.v
++define+FSDB+syn
++access+r

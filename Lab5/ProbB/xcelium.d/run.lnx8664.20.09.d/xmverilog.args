@@ -1,0 +1,7 @@
+//
+// File created by:  xmverilog
+// Do not modify this file
+//
+mini_vending_tb.v
++define+FSDB+syn
++access+r

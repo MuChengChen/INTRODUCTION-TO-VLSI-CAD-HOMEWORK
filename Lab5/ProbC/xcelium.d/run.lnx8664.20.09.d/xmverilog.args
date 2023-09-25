@@ -1,0 +1,7 @@
+//
+// File created by:  xmverilog
+// Do not modify this file
+//
+pattern_gen_tb.v
++define+FSDB+syn
++access+r

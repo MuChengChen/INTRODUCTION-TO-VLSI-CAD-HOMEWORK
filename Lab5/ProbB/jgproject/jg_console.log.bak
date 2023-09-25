@@ -1,0 +1,48 @@
+2023-03-15 19:50:15.181990 (29889) main____ INFO    ----------------------------------------
+2023-03-15 19:50:15.182167 (29889) main____ INFO    JasperGold version info
+2023-03-15 19:50:15.182196 (29889) main____ INFO      tool      : JasperGold 2018.03
+2023-03-15 19:50:15.182217 (29889) main____ INFO      version   : 2018.03p001 64 bits
+2023-03-15 19:50:15.182234 (29889) main____ INFO      build date: 2018.04.24 18:13:05 PDT
+2023-03-15 19:50:15.182246 (29889) main____ INFO    ----------------------------------------
+2023-03-15 19:50:15.182257 (29889) main____ INFO    Runtime info:
+2023-03-15 19:50:15.182272 (29889) main____ INFO      platform  : Linux 3.10.0-693.el7.x86_64 x86_64
+2023-03-15 19:50:15.182289 (29889) main____ INFO      hostname  : vlsicad6
+2023-03-15 19:50:15.182301 (29889) main____ INFO      pid       : 29889
+2023-03-15 19:50:15.182314 (29889) main____ INFO      arguments : '-style' 'windows' '-superlint'
+2023-03-15 19:50:15.182326 (29889) main____ INFO    ----------------------------------------
+2023-03-15 19:50:15.182337 (29889) main____ INFO    System resource limits info:
+2023-03-15 19:50:15.182350 (29889) main____ INFO      virtual memory: unlimited
+2023-03-15 19:50:15.182364 (29889) main____ INFO      cpu time      : unlimited
+2023-03-15 19:50:15.182395 (29889) main____ INFO      stack size    : 8388608 B
+2023-03-15 19:50:15.182436 (29889) main____ INFO      core file size: 0 B
+2023-03-15 19:50:15.182463 (29889) main____ INFO      open files    : 1024
+2023-03-15 19:50:15.182478 (29889) main____ INFO      file size     : unlimited
+2023-03-15 19:50:15.182491 (29889) main____ INFO    ----------------------------------------
+2023-03-15 19:50:15.182502 (29889) main____ INFO    Memory statistics:
+2023-03-15 19:50:15.182513 (29889) main____ INFO      total physical memory  : 20381228 kB
+2023-03-15 19:50:15.182525 (29889) main____ INFO      free physical memory   : 713036 kB
+2023-03-15 19:50:15.182536 (29889) main____ INFO      committed address space: 59382552 kB
+2023-03-15 19:50:15.182547 (29889) main____ INFO    ----------------------------------------
+2023-03-15 19:50:15.182606 (29889) main____ INFO    Important environment variables:
+2023-03-15 19:50:15.182631 (29889) main____ INFO      DISPLAY        : 'localhost:27.0'
+2023-03-15 19:50:15.182650 (29889) main____ INFO      EDITOR         : '/usr/bin/vim'
+2023-03-15 19:50:15.182672 (29889) main____ INFO      LM_LICENSE_FILE: '5280@vlsicad8:26000@lscic:1717@lshc:1717@lstn:1717@lstc:1717@lsncku:5280@lstn:26585@lstn:26585@lstc:26585@lshc:26585@lsncku:26585@lscic'
+2023-03-15 19:50:15.182685 (29889) main____ INFO    ----------------------------------------
+2023-03-15 19:50:15.183994 (29889) lic_core INFO    Initializing license system ...
+2023-03-15 19:50:15.185992 (29889) lic_core INFO    ... license system initialized.
+2023-03-15 19:50:15.188250 (29889) lic__man INFO    Claim 'main' for <ui>.
+2023-03-15 19:50:15.188326 (29889) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2023-03-15 19:50:16.074121 (29889) lic_core INFO    ... (1) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2023-03-15 19:50:16.074183 (29889) lic_core INFO    (2) checking out 'jasper_pint' ...
+2023-03-15 19:50:16.820584 (29889) lic_core INFO    ... (2) checkout succeeded
+2023-03-15 19:50:16.820694 (29889) lic__man INFO    Claim 'superlint' for <ui>.
+2023-03-15 19:50:16.820759 (29889) lic_core INFO    (3) checking out 'jasper_afl' ...
+2023-03-15 19:50:17.758746 (29889) lic_core INFO    ... (3) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2023-03-15 19:50:17.758814 (29889) lic_core INFO    (4) checking out 'jasper_dao' ...
+2023-03-15 19:50:18.299989 (29889) lic_core INFO    ... (4) checkout succeeded
+2023-03-15 19:50:19.950858 (29889) lic__man INFO    Claim 'superlint' for <ui>.
+2023-03-15 19:50:20.433004 (29889) lic__man INFO    Unclaim 'superlint' for <ui>.
+2023-03-15 19:50:20.433079 (29889) lic__man INFO    Claim 'superlint' for <ui>.
+2023-03-15 19:50:20.453033 (29889) session_ INFO    Starting analysis session with session id 'session_0' ...
+2023-03-15 19:50:20.455046 (29889) session_ INFO    Analysis session with session id 'session_0' started (pid: 29974)
+2023-03-15 19:50:25.779580 (29889) session_ INFO    Analysis session 'session_0' connected to the console (host: 192.168.100.6:36614)
