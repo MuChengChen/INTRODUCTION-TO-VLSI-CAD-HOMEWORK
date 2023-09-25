@@ -1,0 +1,4 @@
+s1(01Mar2023:20:51:40):  ncverilog fixedpoint_tb.v +define+FSDB +access+r 
+s2(01Mar2023:20:53:46):  ncverilog fixedpoint_tb.v +define+FSDB +access+r 
+s3(01Mar2023:21:01:18):  ncverilog fixedpoint_tb.v +define+FSDB +access+r 
+s4(01Mar2023:21:19:40):  ncverilog fixedpoint_tb.v +define+FSDB+syn +access+r 
