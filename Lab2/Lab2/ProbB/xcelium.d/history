@@ -1,0 +1,7 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(22Feb2023:20:20:10):( ncverilog CLA_tb.v )
+s2::(22Feb2023:20:26:50):( ncverilog CLA_tb.v )
+s3::(22Feb2023:20:30:03):( ncverilog CLA_tb.v +access+r +define+FSDB )

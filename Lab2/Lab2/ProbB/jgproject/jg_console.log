@@ -1,0 +1,55 @@
+2023-02-22 20:33:29.184644 (14752) main____ INFO    ----------------------------------------
+2023-02-22 20:33:29.184795 (14752) main____ INFO    JasperGold version info
+2023-02-22 20:33:29.184820 (14752) main____ INFO      tool      : JasperGold 2018.03
+2023-02-22 20:33:29.184841 (14752) main____ INFO      version   : 2018.03p001 64 bits
+2023-02-22 20:33:29.184857 (14752) main____ INFO      build date: 2018.04.24 18:13:05 PDT
+2023-02-22 20:33:29.184869 (14752) main____ INFO    ----------------------------------------
+2023-02-22 20:33:29.184879 (14752) main____ INFO    Runtime info:
+2023-02-22 20:33:29.184894 (14752) main____ INFO      platform  : Linux 3.10.0-693.el7.x86_64 x86_64
+2023-02-22 20:33:29.184910 (14752) main____ INFO      hostname  : vlsicad6
+2023-02-22 20:33:29.184922 (14752) main____ INFO      pid       : 14752
+2023-02-22 20:33:29.184935 (14752) main____ INFO      arguments : '-style' 'windows' '-superlint'
+2023-02-22 20:33:29.184946 (14752) main____ INFO    ----------------------------------------
+2023-02-22 20:33:29.184956 (14752) main____ INFO    System resource limits info:
+2023-02-22 20:33:29.184969 (14752) main____ INFO      virtual memory: unlimited
+2023-02-22 20:33:29.184982 (14752) main____ INFO      cpu time      : unlimited
+2023-02-22 20:33:29.185007 (14752) main____ INFO      stack size    : 8388608 B
+2023-02-22 20:33:29.185029 (14752) main____ INFO      core file size: 0 B
+2023-02-22 20:33:29.185049 (14752) main____ INFO      open files    : 1024
+2023-02-22 20:33:29.185063 (14752) main____ INFO      file size     : unlimited
+2023-02-22 20:33:29.185075 (14752) main____ INFO    ----------------------------------------
+2023-02-22 20:33:29.185085 (14752) main____ INFO    Memory statistics:
+2023-02-22 20:33:29.185096 (14752) main____ INFO      total physical memory  : 20381228 kB
+2023-02-22 20:33:29.185107 (14752) main____ INFO      free physical memory   : 5768932 kB
+2023-02-22 20:33:29.185117 (14752) main____ INFO      committed address space: 9000644 kB
+2023-02-22 20:33:29.185127 (14752) main____ INFO    ----------------------------------------
+2023-02-22 20:33:29.185191 (14752) main____ INFO    Important environment variables:
+2023-02-22 20:33:29.185218 (14752) main____ INFO      DISPLAY        : 'localhost:17.0'
+2023-02-22 20:33:29.185237 (14752) main____ INFO      EDITOR         : '/usr/bin/vim'
+2023-02-22 20:33:29.185258 (14752) main____ INFO      LM_LICENSE_FILE: '5280@vlsicad8:26000@lscic:1717@lshc:1717@lstn:1717@lstc:1717@lsncku:5280@lstn:26585@lstn:26585@lstc:26585@lshc:26585@lsncku:26585@lscic'
+2023-02-22 20:33:29.185271 (14752) main____ INFO    ----------------------------------------
+2023-02-22 20:33:29.186519 (14752) lic_core INFO    Initializing license system ...
+2023-02-22 20:33:29.188930 (14752) lic_core INFO    ... license system initialized.
+2023-02-22 20:33:29.191266 (14752) lic__man INFO    Claim 'main' for <ui>.
+2023-02-22 20:33:29.191339 (14752) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2023-02-22 20:33:29.304461 (14752) lic_core INFO    ... (1) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2023-02-22 20:33:29.304503 (14752) lic_core INFO    (2) checking out 'jasper_pint' ...
+2023-02-22 20:33:29.462150 (14752) lic_core INFO    ... (2) checkout succeeded
+2023-02-22 20:33:29.462260 (14752) lic__man INFO    Claim 'superlint' for <ui>.
+2023-02-22 20:33:29.462310 (14752) lic_core INFO    (3) checking out 'jasper_afl' ...
+2023-02-22 20:33:29.578412 (14752) lic_core INFO    ... (3) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2023-02-22 20:33:29.578456 (14752) lic_core INFO    (4) checking out 'jasper_dao' ...
+2023-02-22 20:33:29.740833 (14752) lic_core INFO    ... (4) checkout succeeded
+2023-02-22 20:33:31.174646 (14752) lic__man INFO    Claim 'superlint' for <ui>.
+2023-02-22 20:33:31.615233 (14752) lic__man INFO    Unclaim 'superlint' for <ui>.
+2023-02-22 20:33:31.615304 (14752) lic__man INFO    Claim 'superlint' for <ui>.
+2023-02-22 20:33:31.635429 (14752) session_ INFO    Starting analysis session with session id 'session_0' ...
+2023-02-22 20:33:31.637508 (14752) session_ INFO    Analysis session with session id 'session_0' started (pid: 14779)
+2023-02-22 20:33:36.198518 (14752) session_ INFO    Analysis session 'session_0' connected to the console (host: 192.168.100.6:50938)
+2023-02-22 20:33:51.320148 (14752) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-22 20:33:51.566463 (14752) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-22 20:33:51.657621 (14752) lic__man INFO    Claim 'superlint' for 'session_0'.
+2023-02-22 20:35:06.622876 (14752) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-22 20:35:06.838099 (14752) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-22 20:35:06.882066 (14752) lic__man INFO    Claim 'superlint' for 'session_0'.
+2023-02-22 20:44:37.154849 (14752) lic__man INFO    Entering idle state.

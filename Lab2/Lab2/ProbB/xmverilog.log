@@ -1,0 +1,321 @@
+xmverilog(64): 20.09-s007: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xmverilog	20.09-s007: Started on Feb 22, 2023 at 20:30:03 CST
+ncverilog
+	CLA_tb.v
+	+access+r
+	+define+FSDB
+xmverilog: *W,NCEXDEP: Executable (ncverilog) is deprecated. Use (xmverilog) instead.
+file: CLA_tb.v
+	module worklib.CLA_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.CLA:v <0x20f5d0b4>
+			streams:   1, words:   138
+		worklib.CLA_tb:v <0x43f9068c>
+			streams:   6, words: 15616
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  6       3
+		Primitives:              40       3
+		Registers:                9       9
+		Scalar wires:             2       -
+		Expanded wires:           8       2
+		Initial blocks:           3       3
+		Cont. assignments:        1       1
+		Pseudo assignments:       2       2
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.CLA_tb:v
+Loading snapshot worklib.CLA_tb:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+xcelium> source /usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/xcelium/files/xmsimrc
+xcelium> run
+FSDB Dumper for IUS, Release Verdi_N-2017.12, Linux x86_64/64bit, 11/12/2017
+(C) 1996 - 2017 by Synopsys, Inc.
+***********************************************************************
+*  ERROR -                                                            *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior, please contact Synopsys support for   *
+*  assistance.                                                        *
+***********************************************************************
+*Verdi* : Create FSDB file 'CLA.fsdb'
+*Verdi* : Begin traversing the scope (CLA_tb.CLA0), layer (0).
+*Verdi* : End of traversing.
+                   0ns, A= x, B= x, S= x, Cout=x
+                  10ns, A= 0, B= 0, S= 0, Cout=0
+                  20ns, A= 0, B= 1, S= 1, Cout=0
+                  30ns, A= 0, B= 2, S= 2, Cout=0
+                  40ns, A= 0, B= 3, S= 3, Cout=0
+                  50ns, A= 0, B= 4, S= 4, Cout=0
+                  60ns, A= 0, B= 5, S= 5, Cout=0
+                  70ns, A= 0, B= 6, S= 6, Cout=0
+                  80ns, A= 0, B= 7, S= 7, Cout=0
+                  90ns, A= 0, B= 8, S= 8, Cout=0
+                 100ns, A= 0, B= 9, S= 9, Cout=0
+                 110ns, A= 0, B=10, S=10, Cout=0
+                 120ns, A= 0, B=11, S=11, Cout=0
+                 130ns, A= 0, B=12, S=12, Cout=0
+                 140ns, A= 0, B=13, S=13, Cout=0
+                 150ns, A= 0, B=14, S=14, Cout=0
+                 160ns, A= 0, B=15, S=15, Cout=0
+                 170ns, A= 1, B= 0, S= 1, Cout=0
+                 180ns, A= 1, B= 1, S= 2, Cout=0
+                 190ns, A= 1, B= 2, S= 3, Cout=0
+                 200ns, A= 1, B= 3, S= 4, Cout=0
+                 210ns, A= 1, B= 4, S= 5, Cout=0
+                 220ns, A= 1, B= 5, S= 6, Cout=0
+                 230ns, A= 1, B= 6, S= 7, Cout=0
+                 240ns, A= 1, B= 7, S= 8, Cout=0
+                 250ns, A= 1, B= 8, S= 9, Cout=0
+                 260ns, A= 1, B= 9, S=10, Cout=0
+                 270ns, A= 1, B=10, S=11, Cout=0
+                 280ns, A= 1, B=11, S=12, Cout=0
+                 290ns, A= 1, B=12, S=13, Cout=0
+                 300ns, A= 1, B=13, S=14, Cout=0
+                 310ns, A= 1, B=14, S=15, Cout=0
+                 320ns, A= 1, B=15, S= 0, Cout=1
+                 330ns, A= 2, B= 0, S= 2, Cout=0
+                 340ns, A= 2, B= 1, S= 3, Cout=0
+                 350ns, A= 2, B= 2, S= 4, Cout=0
+                 360ns, A= 2, B= 3, S= 5, Cout=0
+                 370ns, A= 2, B= 4, S= 6, Cout=0
+                 380ns, A= 2, B= 5, S= 7, Cout=0
+                 390ns, A= 2, B= 6, S= 8, Cout=0
+                 400ns, A= 2, B= 7, S= 9, Cout=0
+                 410ns, A= 2, B= 8, S=10, Cout=0
+                 420ns, A= 2, B= 9, S=11, Cout=0
+                 430ns, A= 2, B=10, S=12, Cout=0
+                 440ns, A= 2, B=11, S=13, Cout=0
+                 450ns, A= 2, B=12, S=14, Cout=0
+                 460ns, A= 2, B=13, S=15, Cout=0
+                 470ns, A= 2, B=14, S= 0, Cout=1
+                 480ns, A= 2, B=15, S= 1, Cout=1
+                 490ns, A= 3, B= 0, S= 3, Cout=0
+                 500ns, A= 3, B= 1, S= 4, Cout=0
+                 510ns, A= 3, B= 2, S= 5, Cout=0
+                 520ns, A= 3, B= 3, S= 6, Cout=0
+                 530ns, A= 3, B= 4, S= 7, Cout=0
+                 540ns, A= 3, B= 5, S= 8, Cout=0
+                 550ns, A= 3, B= 6, S= 9, Cout=0
+                 560ns, A= 3, B= 7, S=10, Cout=0
+                 570ns, A= 3, B= 8, S=11, Cout=0
+                 580ns, A= 3, B= 9, S=12, Cout=0
+                 590ns, A= 3, B=10, S=13, Cout=0
+                 600ns, A= 3, B=11, S=14, Cout=0
+                 610ns, A= 3, B=12, S=15, Cout=0
+                 620ns, A= 3, B=13, S= 0, Cout=1
+                 630ns, A= 3, B=14, S= 1, Cout=1
+                 640ns, A= 3, B=15, S= 2, Cout=1
+                 650ns, A= 4, B= 0, S= 4, Cout=0
+                 660ns, A= 4, B= 1, S= 5, Cout=0
+                 670ns, A= 4, B= 2, S= 6, Cout=0
+                 680ns, A= 4, B= 3, S= 7, Cout=0
+                 690ns, A= 4, B= 4, S= 8, Cout=0
+                 700ns, A= 4, B= 5, S= 9, Cout=0
+                 710ns, A= 4, B= 6, S=10, Cout=0
+                 720ns, A= 4, B= 7, S=11, Cout=0
+                 730ns, A= 4, B= 8, S=12, Cout=0
+                 740ns, A= 4, B= 9, S=13, Cout=0
+                 750ns, A= 4, B=10, S=14, Cout=0
+                 760ns, A= 4, B=11, S=15, Cout=0
+                 770ns, A= 4, B=12, S= 0, Cout=1
+                 780ns, A= 4, B=13, S= 1, Cout=1
+                 790ns, A= 4, B=14, S= 2, Cout=1
+                 800ns, A= 4, B=15, S= 3, Cout=1
+                 810ns, A= 5, B= 0, S= 5, Cout=0
+                 820ns, A= 5, B= 1, S= 6, Cout=0
+                 830ns, A= 5, B= 2, S= 7, Cout=0
+                 840ns, A= 5, B= 3, S= 8, Cout=0
+                 850ns, A= 5, B= 4, S= 9, Cout=0
+                 860ns, A= 5, B= 5, S=10, Cout=0
+                 870ns, A= 5, B= 6, S=11, Cout=0
+                 880ns, A= 5, B= 7, S=12, Cout=0
+                 890ns, A= 5, B= 8, S=13, Cout=0
+                 900ns, A= 5, B= 9, S=14, Cout=0
+                 910ns, A= 5, B=10, S=15, Cout=0
+                 920ns, A= 5, B=11, S= 0, Cout=1
+                 930ns, A= 5, B=12, S= 1, Cout=1
+                 940ns, A= 5, B=13, S= 2, Cout=1
+                 950ns, A= 5, B=14, S= 3, Cout=1
+                 960ns, A= 5, B=15, S= 4, Cout=1
+                 970ns, A= 6, B= 0, S= 6, Cout=0
+                 980ns, A= 6, B= 1, S= 7, Cout=0
+                 990ns, A= 6, B= 2, S= 8, Cout=0
+                1000ns, A= 6, B= 3, S= 9, Cout=0
+                1010ns, A= 6, B= 4, S=10, Cout=0
+                1020ns, A= 6, B= 5, S=11, Cout=0
+                1030ns, A= 6, B= 6, S=12, Cout=0
+                1040ns, A= 6, B= 7, S=13, Cout=0
+                1050ns, A= 6, B= 8, S=14, Cout=0
+                1060ns, A= 6, B= 9, S=15, Cout=0
+                1070ns, A= 6, B=10, S= 0, Cout=1
+                1080ns, A= 6, B=11, S= 1, Cout=1
+                1090ns, A= 6, B=12, S= 2, Cout=1
+                1100ns, A= 6, B=13, S= 3, Cout=1
+                1110ns, A= 6, B=14, S= 4, Cout=1
+                1120ns, A= 6, B=15, S= 5, Cout=1
+                1130ns, A= 7, B= 0, S= 7, Cout=0
+                1140ns, A= 7, B= 1, S= 8, Cout=0
+                1150ns, A= 7, B= 2, S= 9, Cout=0
+                1160ns, A= 7, B= 3, S=10, Cout=0
+                1170ns, A= 7, B= 4, S=11, Cout=0
+                1180ns, A= 7, B= 5, S=12, Cout=0
+                1190ns, A= 7, B= 6, S=13, Cout=0
+                1200ns, A= 7, B= 7, S=14, Cout=0
+                1210ns, A= 7, B= 8, S=15, Cout=0
+                1220ns, A= 7, B= 9, S= 0, Cout=1
+                1230ns, A= 7, B=10, S= 1, Cout=1
+                1240ns, A= 7, B=11, S= 2, Cout=1
+                1250ns, A= 7, B=12, S= 3, Cout=1
+                1260ns, A= 7, B=13, S= 4, Cout=1
+                1270ns, A= 7, B=14, S= 5, Cout=1
+                1280ns, A= 7, B=15, S= 6, Cout=1
+                1290ns, A= 8, B= 0, S= 8, Cout=0
+                1300ns, A= 8, B= 1, S= 9, Cout=0
+                1310ns, A= 8, B= 2, S=10, Cout=0
+                1320ns, A= 8, B= 3, S=11, Cout=0
+                1330ns, A= 8, B= 4, S=12, Cout=0
+                1340ns, A= 8, B= 5, S=13, Cout=0
+                1350ns, A= 8, B= 6, S=14, Cout=0
+                1360ns, A= 8, B= 7, S=15, Cout=0
+                1370ns, A= 8, B= 8, S= 0, Cout=1
+                1380ns, A= 8, B= 9, S= 1, Cout=1
+                1390ns, A= 8, B=10, S= 2, Cout=1
+                1400ns, A= 8, B=11, S= 3, Cout=1
+                1410ns, A= 8, B=12, S= 4, Cout=1
+                1420ns, A= 8, B=13, S= 5, Cout=1
+                1430ns, A= 8, B=14, S= 6, Cout=1
+                1440ns, A= 8, B=15, S= 7, Cout=1
+                1450ns, A= 9, B= 0, S= 9, Cout=0
+                1460ns, A= 9, B= 1, S=10, Cout=0
+                1470ns, A= 9, B= 2, S=11, Cout=0
+                1480ns, A= 9, B= 3, S=12, Cout=0
+                1490ns, A= 9, B= 4, S=13, Cout=0
+                1500ns, A= 9, B= 5, S=14, Cout=0
+                1510ns, A= 9, B= 6, S=15, Cout=0
+                1520ns, A= 9, B= 7, S= 0, Cout=1
+                1530ns, A= 9, B= 8, S= 1, Cout=1
+                1540ns, A= 9, B= 9, S= 2, Cout=1
+                1550ns, A= 9, B=10, S= 3, Cout=1
+                1560ns, A= 9, B=11, S= 4, Cout=1
+                1570ns, A= 9, B=12, S= 5, Cout=1
+                1580ns, A= 9, B=13, S= 6, Cout=1
+                1590ns, A= 9, B=14, S= 7, Cout=1
+                1600ns, A= 9, B=15, S= 8, Cout=1
+                1610ns, A=10, B= 0, S=10, Cout=0
+                1620ns, A=10, B= 1, S=11, Cout=0
+                1630ns, A=10, B= 2, S=12, Cout=0
+                1640ns, A=10, B= 3, S=13, Cout=0
+                1650ns, A=10, B= 4, S=14, Cout=0
+                1660ns, A=10, B= 5, S=15, Cout=0
+                1670ns, A=10, B= 6, S= 0, Cout=1
+                1680ns, A=10, B= 7, S= 1, Cout=1
+                1690ns, A=10, B= 8, S= 2, Cout=1
+                1700ns, A=10, B= 9, S= 3, Cout=1
+                1710ns, A=10, B=10, S= 4, Cout=1
+                1720ns, A=10, B=11, S= 5, Cout=1
+                1730ns, A=10, B=12, S= 6, Cout=1
+                1740ns, A=10, B=13, S= 7, Cout=1
+                1750ns, A=10, B=14, S= 8, Cout=1
+                1760ns, A=10, B=15, S= 9, Cout=1
+                1770ns, A=11, B= 0, S=11, Cout=0
+                1780ns, A=11, B= 1, S=12, Cout=0
+                1790ns, A=11, B= 2, S=13, Cout=0
+                1800ns, A=11, B= 3, S=14, Cout=0
+                1810ns, A=11, B= 4, S=15, Cout=0
+                1820ns, A=11, B= 5, S= 0, Cout=1
+                1830ns, A=11, B= 6, S= 1, Cout=1
+                1840ns, A=11, B= 7, S= 2, Cout=1
+                1850ns, A=11, B= 8, S= 3, Cout=1
+                1860ns, A=11, B= 9, S= 4, Cout=1
+                1870ns, A=11, B=10, S= 5, Cout=1
+                1880ns, A=11, B=11, S= 6, Cout=1
+                1890ns, A=11, B=12, S= 7, Cout=1
+                1900ns, A=11, B=13, S= 8, Cout=1
+                1910ns, A=11, B=14, S= 9, Cout=1
+                1920ns, A=11, B=15, S=10, Cout=1
+                1930ns, A=12, B= 0, S=12, Cout=0
+                1940ns, A=12, B= 1, S=13, Cout=0
+                1950ns, A=12, B= 2, S=14, Cout=0
+                1960ns, A=12, B= 3, S=15, Cout=0
+                1970ns, A=12, B= 4, S= 0, Cout=1
+                1980ns, A=12, B= 5, S= 1, Cout=1
+                1990ns, A=12, B= 6, S= 2, Cout=1
+                2000ns, A=12, B= 7, S= 3, Cout=1
+                2010ns, A=12, B= 8, S= 4, Cout=1
+                2020ns, A=12, B= 9, S= 5, Cout=1
+                2030ns, A=12, B=10, S= 6, Cout=1
+                2040ns, A=12, B=11, S= 7, Cout=1
+                2050ns, A=12, B=12, S= 8, Cout=1
+                2060ns, A=12, B=13, S= 9, Cout=1
+                2070ns, A=12, B=14, S=10, Cout=1
+                2080ns, A=12, B=15, S=11, Cout=1
+                2090ns, A=13, B= 0, S=13, Cout=0
+                2100ns, A=13, B= 1, S=14, Cout=0
+                2110ns, A=13, B= 2, S=15, Cout=0
+                2120ns, A=13, B= 3, S= 0, Cout=1
+                2130ns, A=13, B= 4, S= 1, Cout=1
+                2140ns, A=13, B= 5, S= 2, Cout=1
+                2150ns, A=13, B= 6, S= 3, Cout=1
+                2160ns, A=13, B= 7, S= 4, Cout=1
+                2170ns, A=13, B= 8, S= 5, Cout=1
+                2180ns, A=13, B= 9, S= 6, Cout=1
+                2190ns, A=13, B=10, S= 7, Cout=1
+                2200ns, A=13, B=11, S= 8, Cout=1
+                2210ns, A=13, B=12, S= 9, Cout=1
+                2220ns, A=13, B=13, S=10, Cout=1
+                2230ns, A=13, B=14, S=11, Cout=1
+                2240ns, A=13, B=15, S=12, Cout=1
+                2250ns, A=14, B= 0, S=14, Cout=0
+                2260ns, A=14, B= 1, S=15, Cout=0
+                2270ns, A=14, B= 2, S= 0, Cout=1
+                2280ns, A=14, B= 3, S= 1, Cout=1
+                2290ns, A=14, B= 4, S= 2, Cout=1
+                2300ns, A=14, B= 5, S= 3, Cout=1
+                2310ns, A=14, B= 6, S= 4, Cout=1
+                2320ns, A=14, B= 7, S= 5, Cout=1
+                2330ns, A=14, B= 8, S= 6, Cout=1
+                2340ns, A=14, B= 9, S= 7, Cout=1
+                2350ns, A=14, B=10, S= 8, Cout=1
+                2360ns, A=14, B=11, S= 9, Cout=1
+                2370ns, A=14, B=12, S=10, Cout=1
+                2380ns, A=14, B=13, S=11, Cout=1
+                2390ns, A=14, B=14, S=12, Cout=1
+                2400ns, A=14, B=15, S=13, Cout=1
+                2410ns, A=15, B= 0, S=15, Cout=0
+                2420ns, A=15, B= 1, S= 0, Cout=1
+                2430ns, A=15, B= 2, S= 1, Cout=1
+                2440ns, A=15, B= 3, S= 2, Cout=1
+                2450ns, A=15, B= 4, S= 3, Cout=1
+                2460ns, A=15, B= 5, S= 4, Cout=1
+                2470ns, A=15, B= 6, S= 5, Cout=1
+                2480ns, A=15, B= 7, S= 6, Cout=1
+                2490ns, A=15, B= 8, S= 7, Cout=1
+                2500ns, A=15, B= 9, S= 8, Cout=1
+                2510ns, A=15, B=10, S= 9, Cout=1
+                2520ns, A=15, B=11, S=10, Cout=1
+                2530ns, A=15, B=12, S=11, Cout=1
+                2540ns, A=15, B=13, S=12, Cout=1
+                2550ns, A=15, B=14, S=13, Cout=1
+                2560ns, A=15, B=15, S=14, Cout=1
+
+
+
+
+        **************************               
+        *                        *       |__||  
+        *  Congratulations !!    *      / O.O  | 
+        *                        *    /_____   | 
+        *  Simulation PASS!!     *   /^ ^ ^ \  |
+        *                        *  |^ ^ ^ ^ |w| 
+        **************************   \m___m__|_|
+
+
+Simulation complete via $finish(1) at time 2570 NS + 0
+./CLA_tb.v:89 		$finish;
+xcelium> exit
+TOOL:	xmverilog	20.09-s007: Exiting on Feb 22, 2023 at 20:30:04 CST  (total: 00:00:01)

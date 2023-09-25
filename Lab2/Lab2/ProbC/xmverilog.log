@@ -1,0 +1,325 @@
+xmverilog(64): 20.09-s007: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xmverilog	20.09-s007: Started on Feb 23, 2023 at 11:26:10 CST
+ncverilog
+	multi_tb.v
+	+access+r
+	+define+FSDB
+xmverilog: *W,NCEXDEP: Executable (ncverilog) is deprecated. Use (xmverilog) instead.
+Recompiling... reason: file '../ProbB/CLA.v' is newer than expected.
+	expected: Wed Feb 22 20:08:57 2023
+	actual:   Wed Feb 22 22:13:28 2023
+file: multi_tb.v
+	module worklib.multi:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.multi:v <0x134eab28>
+			streams:   3, words:   783
+		worklib.multi_tb:v <0x3f7ec8ed>
+			streams:   6, words: 15046
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 17       4
+		Primitives:             136       3
+		Registers:                6       6
+		Scalar wires:            11       -
+		Expanded wires:          17       5
+		Initial blocks:           3       3
+		Cont. assignments:        6      11
+		Pseudo assignments:       2       2
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.multi_tb:v
+Loading snapshot worklib.multi_tb:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+xcelium> source /usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/xcelium/files/xmsimrc
+xcelium> run
+FSDB Dumper for IUS, Release Verdi_N-2017.12, Linux x86_64/64bit, 11/12/2017
+(C) 1996 - 2017 by Synopsys, Inc.
+***********************************************************************
+*  ERROR -                                                            *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior, please contact Synopsys support for   *
+*  assistance.                                                        *
+***********************************************************************
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'multi.fsdb'
+*Verdi* : Begin traversing the scope (multi_tb.multi0), layer (0).
+*Verdi* : End of traversing.
+                   0ns, A= x, B= x, Result=  x
+                  10ns, A= 0, B= 0, Result=  0
+                  20ns, A= 0, B= 1, Result=  0
+                  30ns, A= 0, B= 2, Result=  0
+                  40ns, A= 0, B= 3, Result=  0
+                  50ns, A= 0, B= 4, Result=  0
+                  60ns, A= 0, B= 5, Result=  0
+                  70ns, A= 0, B= 6, Result=  0
+                  80ns, A= 0, B= 7, Result=  0
+                  90ns, A= 0, B= 8, Result=  0
+                 100ns, A= 0, B= 9, Result=  0
+                 110ns, A= 0, B=10, Result=  0
+                 120ns, A= 0, B=11, Result=  0
+                 130ns, A= 0, B=12, Result=  0
+                 140ns, A= 0, B=13, Result=  0
+                 150ns, A= 0, B=14, Result=  0
+                 160ns, A= 0, B=15, Result=  0
+                 170ns, A= 1, B= 0, Result=  0
+                 180ns, A= 1, B= 1, Result=  1
+                 190ns, A= 1, B= 2, Result=  2
+                 200ns, A= 1, B= 3, Result=  3
+                 210ns, A= 1, B= 4, Result=  4
+                 220ns, A= 1, B= 5, Result=  5
+                 230ns, A= 1, B= 6, Result=  6
+                 240ns, A= 1, B= 7, Result=  7
+                 250ns, A= 1, B= 8, Result=  8
+                 260ns, A= 1, B= 9, Result=  9
+                 270ns, A= 1, B=10, Result= 10
+                 280ns, A= 1, B=11, Result= 11
+                 290ns, A= 1, B=12, Result= 12
+                 300ns, A= 1, B=13, Result= 13
+                 310ns, A= 1, B=14, Result= 14
+                 320ns, A= 1, B=15, Result= 15
+                 330ns, A= 2, B= 0, Result=  0
+                 340ns, A= 2, B= 1, Result=  2
+                 350ns, A= 2, B= 2, Result=  4
+                 360ns, A= 2, B= 3, Result=  6
+                 370ns, A= 2, B= 4, Result=  8
+                 380ns, A= 2, B= 5, Result= 10
+                 390ns, A= 2, B= 6, Result= 12
+                 400ns, A= 2, B= 7, Result= 14
+                 410ns, A= 2, B= 8, Result= 16
+                 420ns, A= 2, B= 9, Result= 18
+                 430ns, A= 2, B=10, Result= 20
+                 440ns, A= 2, B=11, Result= 22
+                 450ns, A= 2, B=12, Result= 24
+                 460ns, A= 2, B=13, Result= 26
+                 470ns, A= 2, B=14, Result= 28
+                 480ns, A= 2, B=15, Result= 30
+                 490ns, A= 3, B= 0, Result=  0
+                 500ns, A= 3, B= 1, Result=  3
+                 510ns, A= 3, B= 2, Result=  6
+                 520ns, A= 3, B= 3, Result=  9
+                 530ns, A= 3, B= 4, Result= 12
+                 540ns, A= 3, B= 5, Result= 15
+                 550ns, A= 3, B= 6, Result= 18
+                 560ns, A= 3, B= 7, Result= 21
+                 570ns, A= 3, B= 8, Result= 24
+                 580ns, A= 3, B= 9, Result= 27
+                 590ns, A= 3, B=10, Result= 30
+                 600ns, A= 3, B=11, Result= 33
+                 610ns, A= 3, B=12, Result= 36
+                 620ns, A= 3, B=13, Result= 39
+                 630ns, A= 3, B=14, Result= 42
+                 640ns, A= 3, B=15, Result= 45
+                 650ns, A= 4, B= 0, Result=  0
+                 660ns, A= 4, B= 1, Result=  4
+                 670ns, A= 4, B= 2, Result=  8
+                 680ns, A= 4, B= 3, Result= 12
+                 690ns, A= 4, B= 4, Result= 16
+                 700ns, A= 4, B= 5, Result= 20
+                 710ns, A= 4, B= 6, Result= 24
+                 720ns, A= 4, B= 7, Result= 28
+                 730ns, A= 4, B= 8, Result= 32
+                 740ns, A= 4, B= 9, Result= 36
+                 750ns, A= 4, B=10, Result= 40
+                 760ns, A= 4, B=11, Result= 44
+                 770ns, A= 4, B=12, Result= 48
+                 780ns, A= 4, B=13, Result= 52
+                 790ns, A= 4, B=14, Result= 56
+                 800ns, A= 4, B=15, Result= 60
+                 810ns, A= 5, B= 0, Result=  0
+                 820ns, A= 5, B= 1, Result=  5
+                 830ns, A= 5, B= 2, Result= 10
+                 840ns, A= 5, B= 3, Result= 15
+                 850ns, A= 5, B= 4, Result= 20
+                 860ns, A= 5, B= 5, Result= 25
+                 870ns, A= 5, B= 6, Result= 30
+                 880ns, A= 5, B= 7, Result= 35
+                 890ns, A= 5, B= 8, Result= 40
+                 900ns, A= 5, B= 9, Result= 45
+                 910ns, A= 5, B=10, Result= 50
+                 920ns, A= 5, B=11, Result= 55
+                 930ns, A= 5, B=12, Result= 60
+                 940ns, A= 5, B=13, Result= 65
+                 950ns, A= 5, B=14, Result= 70
+                 960ns, A= 5, B=15, Result= 75
+                 970ns, A= 6, B= 0, Result=  0
+                 980ns, A= 6, B= 1, Result=  6
+                 990ns, A= 6, B= 2, Result= 12
+                1000ns, A= 6, B= 3, Result= 18
+                1010ns, A= 6, B= 4, Result= 24
+                1020ns, A= 6, B= 5, Result= 30
+                1030ns, A= 6, B= 6, Result= 36
+                1040ns, A= 6, B= 7, Result= 42
+                1050ns, A= 6, B= 8, Result= 48
+                1060ns, A= 6, B= 9, Result= 54
+                1070ns, A= 6, B=10, Result= 60
+                1080ns, A= 6, B=11, Result= 66
+                1090ns, A= 6, B=12, Result= 72
+                1100ns, A= 6, B=13, Result= 78
+                1110ns, A= 6, B=14, Result= 84
+                1120ns, A= 6, B=15, Result= 90
+                1130ns, A= 7, B= 0, Result=  0
+                1140ns, A= 7, B= 1, Result=  7
+                1150ns, A= 7, B= 2, Result= 14
+                1160ns, A= 7, B= 3, Result= 21
+                1170ns, A= 7, B= 4, Result= 28
+                1180ns, A= 7, B= 5, Result= 35
+                1190ns, A= 7, B= 6, Result= 42
+                1200ns, A= 7, B= 7, Result= 49
+                1210ns, A= 7, B= 8, Result= 56
+                1220ns, A= 7, B= 9, Result= 63
+                1230ns, A= 7, B=10, Result= 70
+                1240ns, A= 7, B=11, Result= 77
+                1250ns, A= 7, B=12, Result= 84
+                1260ns, A= 7, B=13, Result= 91
+                1270ns, A= 7, B=14, Result= 98
+                1280ns, A= 7, B=15, Result=105
+                1290ns, A= 8, B= 0, Result=  0
+                1300ns, A= 8, B= 1, Result=  8
+                1310ns, A= 8, B= 2, Result= 16
+                1320ns, A= 8, B= 3, Result= 24
+                1330ns, A= 8, B= 4, Result= 32
+                1340ns, A= 8, B= 5, Result= 40
+                1350ns, A= 8, B= 6, Result= 48
+                1360ns, A= 8, B= 7, Result= 56
+                1370ns, A= 8, B= 8, Result= 64
+                1380ns, A= 8, B= 9, Result= 72
+                1390ns, A= 8, B=10, Result= 80
+                1400ns, A= 8, B=11, Result= 88
+                1410ns, A= 8, B=12, Result= 96
+                1420ns, A= 8, B=13, Result=104
+                1430ns, A= 8, B=14, Result=112
+                1440ns, A= 8, B=15, Result=120
+                1450ns, A= 9, B= 0, Result=  0
+                1460ns, A= 9, B= 1, Result=  9
+                1470ns, A= 9, B= 2, Result= 18
+                1480ns, A= 9, B= 3, Result= 27
+                1490ns, A= 9, B= 4, Result= 36
+                1500ns, A= 9, B= 5, Result= 45
+                1510ns, A= 9, B= 6, Result= 54
+                1520ns, A= 9, B= 7, Result= 63
+                1530ns, A= 9, B= 8, Result= 72
+                1540ns, A= 9, B= 9, Result= 81
+                1550ns, A= 9, B=10, Result= 90
+                1560ns, A= 9, B=11, Result= 99
+                1570ns, A= 9, B=12, Result=108
+                1580ns, A= 9, B=13, Result=117
+                1590ns, A= 9, B=14, Result=126
+                1600ns, A= 9, B=15, Result=135
+                1610ns, A=10, B= 0, Result=  0
+                1620ns, A=10, B= 1, Result= 10
+                1630ns, A=10, B= 2, Result= 20
+                1640ns, A=10, B= 3, Result= 30
+                1650ns, A=10, B= 4, Result= 40
+                1660ns, A=10, B= 5, Result= 50
+                1670ns, A=10, B= 6, Result= 60
+                1680ns, A=10, B= 7, Result= 70
+                1690ns, A=10, B= 8, Result= 80
+                1700ns, A=10, B= 9, Result= 90
+                1710ns, A=10, B=10, Result=100
+                1720ns, A=10, B=11, Result=110
+                1730ns, A=10, B=12, Result=120
+                1740ns, A=10, B=13, Result=130
+                1750ns, A=10, B=14, Result=140
+                1760ns, A=10, B=15, Result=150
+                1770ns, A=11, B= 0, Result=  0
+                1780ns, A=11, B= 1, Result= 11
+                1790ns, A=11, B= 2, Result= 22
+                1800ns, A=11, B= 3, Result= 33
+                1810ns, A=11, B= 4, Result= 44
+                1820ns, A=11, B= 5, Result= 55
+                1830ns, A=11, B= 6, Result= 66
+                1840ns, A=11, B= 7, Result= 77
+                1850ns, A=11, B= 8, Result= 88
+                1860ns, A=11, B= 9, Result= 99
+                1870ns, A=11, B=10, Result=110
+                1880ns, A=11, B=11, Result=121
+                1890ns, A=11, B=12, Result=132
+                1900ns, A=11, B=13, Result=143
+                1910ns, A=11, B=14, Result=154
+                1920ns, A=11, B=15, Result=165
+                1930ns, A=12, B= 0, Result=  0
+                1940ns, A=12, B= 1, Result= 12
+                1950ns, A=12, B= 2, Result= 24
+                1960ns, A=12, B= 3, Result= 36
+                1970ns, A=12, B= 4, Result= 48
+                1980ns, A=12, B= 5, Result= 60
+                1990ns, A=12, B= 6, Result= 72
+                2000ns, A=12, B= 7, Result= 84
+                2010ns, A=12, B= 8, Result= 96
+                2020ns, A=12, B= 9, Result=108
+                2030ns, A=12, B=10, Result=120
+                2040ns, A=12, B=11, Result=132
+                2050ns, A=12, B=12, Result=144
+                2060ns, A=12, B=13, Result=156
+                2070ns, A=12, B=14, Result=168
+                2080ns, A=12, B=15, Result=180
+                2090ns, A=13, B= 0, Result=  0
+                2100ns, A=13, B= 1, Result= 13
+                2110ns, A=13, B= 2, Result= 26
+                2120ns, A=13, B= 3, Result= 39
+                2130ns, A=13, B= 4, Result= 52
+                2140ns, A=13, B= 5, Result= 65
+                2150ns, A=13, B= 6, Result= 78
+                2160ns, A=13, B= 7, Result= 91
+                2170ns, A=13, B= 8, Result=104
+                2180ns, A=13, B= 9, Result=117
+                2190ns, A=13, B=10, Result=130
+                2200ns, A=13, B=11, Result=143
+                2210ns, A=13, B=12, Result=156
+                2220ns, A=13, B=13, Result=169
+                2230ns, A=13, B=14, Result=182
+                2240ns, A=13, B=15, Result=195
+                2250ns, A=14, B= 0, Result=  0
+                2260ns, A=14, B= 1, Result= 14
+                2270ns, A=14, B= 2, Result= 28
+                2280ns, A=14, B= 3, Result= 42
+                2290ns, A=14, B= 4, Result= 56
+                2300ns, A=14, B= 5, Result= 70
+                2310ns, A=14, B= 6, Result= 84
+                2320ns, A=14, B= 7, Result= 98
+                2330ns, A=14, B= 8, Result=112
+                2340ns, A=14, B= 9, Result=126
+                2350ns, A=14, B=10, Result=140
+                2360ns, A=14, B=11, Result=154
+                2370ns, A=14, B=12, Result=168
+                2380ns, A=14, B=13, Result=182
+                2390ns, A=14, B=14, Result=196
+                2400ns, A=14, B=15, Result=210
+                2410ns, A=15, B= 0, Result=  0
+                2420ns, A=15, B= 1, Result= 15
+                2430ns, A=15, B= 2, Result= 30
+                2440ns, A=15, B= 3, Result= 45
+                2450ns, A=15, B= 4, Result= 60
+                2460ns, A=15, B= 5, Result= 75
+                2470ns, A=15, B= 6, Result= 90
+                2480ns, A=15, B= 7, Result=105
+                2490ns, A=15, B= 8, Result=120
+                2500ns, A=15, B= 9, Result=135
+                2510ns, A=15, B=10, Result=150
+                2520ns, A=15, B=11, Result=165
+                2530ns, A=15, B=12, Result=180
+                2540ns, A=15, B=13, Result=195
+                2550ns, A=15, B=14, Result=210
+                2560ns, A=15, B=15, Result=225
+
+
+
+
+        **************************               
+        *                        *       |__||  
+        *  Congratulations !!    *      / O.O  | 
+        *                        *    /_____   | 
+        *  Simulation PASS!!     *   /^ ^ ^ \  |
+        *                        *  |^ ^ ^ ^ |w| 
+        **************************   \m___m__|_|
+
+
+Simulation complete via $finish(1) at time 2570 NS + 0
+./multi_tb.v:83 		$finish;
+xcelium> exit
+TOOL:	xmverilog	20.09-s007: Exiting on Feb 23, 2023 at 11:26:11 CST  (total: 00:00:01)
