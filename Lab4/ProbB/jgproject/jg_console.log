@@ -1,0 +1,64 @@
+2023-03-08 21:09:52.853887 (18324) main____ INFO    ----------------------------------------
+2023-03-08 21:09:52.854050 (18324) main____ INFO    JasperGold version info
+2023-03-08 21:09:52.854076 (18324) main____ INFO      tool      : JasperGold 2018.03
+2023-03-08 21:09:52.854098 (18324) main____ INFO      version   : 2018.03p001 64 bits
+2023-03-08 21:09:52.854115 (18324) main____ INFO      build date: 2018.04.24 18:13:05 PDT
+2023-03-08 21:09:52.854128 (18324) main____ INFO    ----------------------------------------
+2023-03-08 21:09:52.854139 (18324) main____ INFO    Runtime info:
+2023-03-08 21:09:52.854167 (18324) main____ INFO      platform  : Linux 3.10.0-693.el7.x86_64 x86_64
+2023-03-08 21:09:52.854190 (18324) main____ INFO      hostname  : vlsicad6
+2023-03-08 21:09:52.854204 (18324) main____ INFO      pid       : 18324
+2023-03-08 21:09:52.854217 (18324) main____ INFO      arguments : '-style' 'windows' '-superlint'
+2023-03-08 21:09:52.854229 (18324) main____ INFO    ----------------------------------------
+2023-03-08 21:09:52.854240 (18324) main____ INFO    System resource limits info:
+2023-03-08 21:09:52.854254 (18324) main____ INFO      virtual memory: unlimited
+2023-03-08 21:09:52.854268 (18324) main____ INFO      cpu time      : unlimited
+2023-03-08 21:09:52.854295 (18324) main____ INFO      stack size    : 8388608 B
+2023-03-08 21:09:52.854319 (18324) main____ INFO      core file size: 0 B
+2023-03-08 21:09:52.854341 (18324) main____ INFO      open files    : 1024
+2023-03-08 21:09:52.854356 (18324) main____ INFO      file size     : unlimited
+2023-03-08 21:09:52.854368 (18324) main____ INFO    ----------------------------------------
+2023-03-08 21:09:52.854379 (18324) main____ INFO    Memory statistics:
+2023-03-08 21:09:52.854391 (18324) main____ INFO      total physical memory  : 20381228 kB
+2023-03-08 21:09:52.854402 (18324) main____ INFO      free physical memory   : 452024 kB
+2023-03-08 21:09:52.854413 (18324) main____ INFO      committed address space: 29002108 kB
+2023-03-08 21:09:52.854424 (18324) main____ INFO    ----------------------------------------
+2023-03-08 21:09:52.854486 (18324) main____ INFO    Important environment variables:
+2023-03-08 21:09:52.854512 (18324) main____ INFO      DISPLAY        : 'localhost:21.0'
+2023-03-08 21:09:52.854531 (18324) main____ INFO      EDITOR         : '/usr/bin/vim'
+2023-03-08 21:09:52.854553 (18324) main____ INFO      LM_LICENSE_FILE: '5280@vlsicad8:26000@lscic:1717@lshc:1717@lstn:1717@lstc:1717@lsncku:5280@lstn:26585@lstn:26585@lstc:26585@lshc:26585@lsncku:26585@lscic'
+2023-03-08 21:09:52.854567 (18324) main____ INFO    ----------------------------------------
+2023-03-08 21:09:52.855917 (18324) lic_core INFO    Initializing license system ...
+2023-03-08 21:09:52.859767 (18324) lic_core INFO    ... license system initialized.
+2023-03-08 21:09:52.862059 (18324) lic__man INFO    Claim 'main' for <ui>.
+2023-03-08 21:09:52.862132 (18324) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2023-03-08 21:09:53.047547 (18324) lic_core INFO    ... (1) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2023-03-08 21:09:53.047590 (18324) lic_core INFO    (2) checking out 'jasper_pint' ...
+2023-03-08 21:09:53.231968 (18324) lic_core INFO    ... (2) checkout succeeded
+2023-03-08 21:09:53.232081 (18324) lic__man INFO    Claim 'superlint' for <ui>.
+2023-03-08 21:09:53.232136 (18324) lic_core INFO    (3) checking out 'jasper_afl' ...
+2023-03-08 21:09:53.510123 (18324) lic_core INFO    ... (3) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2023-03-08 21:09:53.510178 (18324) lic_core INFO    (4) checking out 'jasper_dao' ...
+2023-03-08 21:09:53.702513 (18324) lic_core INFO    ... (4) checkout succeeded
+2023-03-08 21:09:55.298680 (18324) lic__man INFO    Claim 'superlint' for <ui>.
+2023-03-08 21:09:55.739776 (18324) lic__man INFO    Unclaim 'superlint' for <ui>.
+2023-03-08 21:09:55.739834 (18324) lic__man INFO    Claim 'superlint' for <ui>.
+2023-03-08 21:09:55.759104 (18324) session_ INFO    Starting analysis session with session id 'session_0' ...
+2023-03-08 21:09:55.761139 (18324) session_ INFO    Analysis session with session id 'session_0' started (pid: 18353)
+2023-03-08 21:10:00.570943 (18324) session_ INFO    Analysis session 'session_0' connected to the console (host: 192.168.100.6:46144)
+2023-03-08 21:10:48.269943 (18324) lic__man INFO    Unclaim everything for 'session_0'.
+2023-03-08 21:10:48.819010 (18324) lic__man INFO    Unclaim everything for 'session_0'.
+2023-03-08 21:10:48.923492 (18324) lic__man INFO    Claim 'superlint' for 'session_0'.
+2023-03-08 21:20:29.919600 (18324) lic__man INFO    Unclaim everything for 'session_0'.
+2023-03-08 21:20:30.204695 (18324) lic__man INFO    Unclaim everything for 'session_0'.
+2023-03-08 21:20:30.268362 (18324) lic__man INFO    Claim 'superlint' for 'session_0'.
+2023-03-08 21:23:23.959565 (18324) lic__man INFO    Unclaim everything for 'session_0'.
+2023-03-08 21:23:24.252391 (18324) lic__man INFO    Unclaim everything for 'session_0'.
+2023-03-08 21:23:24.278787 (18324) lic__man INFO    Claim 'superlint' for 'session_0'.
+2023-03-08 21:24:12.882789 (18324) lic__man INFO    Unclaim everything for 'session_0'.
+2023-03-08 21:24:13.176844 (18324) lic__man INFO    Unclaim everything for 'session_0'.
+2023-03-08 21:24:13.210978 (18324) lic__man INFO    Claim 'superlint' for 'session_0'.
+2023-03-08 21:32:19.865714 (18324) lic__man INFO    Entering idle state.
+2023-03-08 21:45:26.869111 (18324) lic__man INFO    Leaving idle state.
+2023-03-08 21:45:26.967760 (18324) main____ INFO    About to exit: requested from GUI
+2023-03-08 21:45:27.271666 (18324) main____ INFO    Exiting with status 0.

@@ -1,0 +1,7 @@
+//
+// File created by:  xmverilog
+// Do not modify this file
+//
+register_tb.v
++define+FSDB_ALL
++access+r

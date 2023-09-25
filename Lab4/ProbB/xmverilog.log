@@ -1,0 +1,85 @@
+xmverilog(64): 20.09-s007: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xmverilog	20.09-s007: Started on Mar 08, 2023 at 21:24:02 CST
+ncverilog
+	top_tb.v
+	+define+FSDB
+	+access+r
+xmverilog: *W,NCEXDEP: Executable (ncverilog) is deprecated. Use (xmverilog) instead.
+Recompiling... reason: file './top.v' is newer than expected.
+	expected: Wed Mar  8 21:14:16 2023
+	actual:   Wed Mar  8 21:15:04 2023
+file: top_tb.v
+	module worklib.top:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.top:v <0x6a566092>
+			streams:  16, words: 15769
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               23      23
+		Scalar wires:             5       -
+		Vectored wires:           5       -
+		Always blocks:           13      13
+		Initial blocks:           3       3
+		Cont. assignments:        1       1
+		Pseudo assignments:       3       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.top_tb:v
+Loading snapshot worklib.top_tb:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+xcelium> source /usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/xcelium/files/xmsimrc
+xcelium> run
+FSDB Dumper for IUS, Release Verdi_N-2017.12, Linux x86_64/64bit, 11/12/2017
+(C) 1996 - 2017 by Synopsys, Inc.
+***********************************************************************
+*  ERROR -                                                            *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior, please contact Synopsys support for   *
+*  assistance.                                                        *
+***********************************************************************
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'top.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+                   0 data_val = 0, data = 000000, d = 000, index = 0
+                 153 data_val = 1, data = 00ffaa, d = 000, index = 0
+                 160 data_val = 1, data = 00ffaa, d = 154, index = 7
+                 163 data_val = 0, data = 000000, d = 154, index = 7
+                 180 data_val = 0, data = 000000, d = 154, index = 6
+                 190 data_val = 0, data = 000000, d = 154, index = 5
+                 200 data_val = 0, data = 000000, d = 154, index = 4
+                 210 data_val = 0, data = 000000, d = 154, index = 3
+                 220 data_val = 0, data = 000000, d = 154, index = 2
+                 230 data_val = 0, data = 000000, d = 02f, index = 1
+                 253 data_val = 1, data = 0101ff, d = 02f, index = 1
+                 260 data_val = 1, data = 0101ff, d = 002, index = 7
+                 263 data_val = 0, data = 000000, d = 002, index = 7
+                 280 data_val = 0, data = 000000, d = 002, index = 6
+                 290 data_val = 0, data = 000000, d = 002, index = 5
+                 300 data_val = 0, data = 000000, d = 002, index = 4
+                 310 data_val = 0, data = 000000, d = 002, index = 3
+                 320 data_val = 0, data = 000000, d = 002, index = 2
+
+
+
+
+        ****************************               
+        **                        **       |__||  
+        **  Congratulations !!    **      / O.O  | 
+        **                        **    /_____   | 
+        **  Simulation PASS!!     **   /^ ^ ^ \  |
+        **                        **  |^ ^ ^ ^ |w| 
+        ****************************   \m___m__|_|
+
+
+Simulation complete via $finish(1) at time 463 NS + 0
+./top_tb.v:71 	$finish;
+xcelium> exit
+TOOL:	xmverilog	20.09-s007: Exiting on Mar 08, 2023 at 21:24:04 CST  (total: 00:00:02)

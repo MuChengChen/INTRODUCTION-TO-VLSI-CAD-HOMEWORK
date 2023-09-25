@@ -1,0 +1,324 @@
+xmverilog(64): 20.09-s007: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xmverilog	20.09-s007: Started on Mar 08, 2023 at 21:43:24 CST
+ncverilog
+	LFSR_tb.v
+	+define+FSDB
+	+access+r
+xmverilog: *W,NCEXDEP: Executable (ncverilog) is deprecated. Use (xmverilog) instead.
+file: LFSR_tb.v
+	module worklib.LFSR:v
+		errors: 0, warnings: 0
+			$fscanf(fp_r, "%d\n", exp[i]);
+			      |
+xmvlog: *W,NOSYST (LFSR_tb.v,42|9): System function '$fscanf' invoked as a task. Return value will be ignored.
+	module worklib.LFSR_tb:v
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.LFSR:v <0x40a5a310>
+			streams:   2, words:   753
+		worklib.LFSR_tb:v <0x1504812b>
+			streams:   7, words: 16712
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               10      10
+		Scalar wires:             3       -
+		Vectored wires:           2       -
+		Always blocks:            2       2
+		Initial blocks:           4       4
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.LFSR_tb:v
+Loading snapshot worklib.LFSR_tb:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+xcelium> source /usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/xcelium/files/xmsimrc
+xcelium> run
+FSDB Dumper for IUS, Release Verdi_N-2017.12, Linux x86_64/64bit, 11/12/2017
+(C) 1996 - 2017 by Synopsys, Inc.
+***********************************************************************
+*  ERROR -                                                            *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior, please contact Synopsys support for   *
+*  assistance.                                                        *
+***********************************************************************
+*Verdi* : Create FSDB file 'LFSR.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+                   0 output =   0, expect =   0
+                  40 output =   7, expect =   7
+                  50 output =  14, expect =  14
+                  60 output =  29, expect =  29
+                  70 output =  58, expect =  58
+                  80 output = 117, expect = 117
+                  90 output = 234, expect = 234
+                 100 output = 213, expect = 213
+                 110 output = 170, expect = 170
+                 120 output =  85, expect =  85
+                 130 output = 171, expect = 171
+                 140 output =  87, expect =  87
+                 150 output = 175, expect = 175
+                 160 output =  95, expect =  95
+                 170 output = 190, expect = 190
+                 180 output = 124, expect = 124
+                 190 output = 249, expect = 249
+                 200 output = 242, expect = 242
+                 210 output = 229, expect = 229
+                 220 output = 202, expect = 202
+                 230 output = 148, expect = 148
+                 240 output =  40, expect =  40
+                 250 output =  80, expect =  80
+                 260 output = 161, expect = 161
+                 270 output =  66, expect =  66
+                 280 output = 132, expect = 132
+                 290 output =   9, expect =   9
+                 300 output =  19, expect =  19
+                 310 output =  39, expect =  39
+                 320 output =  79, expect =  79
+                 330 output = 159, expect = 159
+                 340 output =  63, expect =  63
+                 350 output = 127, expect = 127
+                 360 output = 255, expect = 255
+                 370 output = 254, expect = 254
+                 380 output = 252, expect = 252
+                 390 output = 248, expect = 248
+                 400 output = 240, expect = 240
+                 410 output = 225, expect = 225
+                 420 output = 194, expect = 194
+                 430 output = 133, expect = 133
+                 440 output =  11, expect =  11
+                 450 output =  23, expect =  23
+                 460 output =  47, expect =  47
+                 470 output =  94, expect =  94
+                 480 output = 188, expect = 188
+                 490 output = 120, expect = 120
+                 500 output = 241, expect = 241
+                 510 output = 227, expect = 227
+                 520 output = 198, expect = 198
+                 530 output = 141, expect = 141
+                 540 output =  26, expect =  26
+                 550 output =  52, expect =  52
+                 560 output = 104, expect = 104
+                 570 output = 208, expect = 208
+                 580 output = 160, expect = 160
+                 590 output =  64, expect =  64
+                 600 output = 128, expect = 128
+                 610 output =   1, expect =   1
+                 620 output =   2, expect =   2
+                 630 output =   4, expect =   4
+                 640 output =   8, expect =   8
+                 650 output =  17, expect =  17
+                 660 output =  35, expect =  35
+                 670 output =  71, expect =  71
+                 680 output = 142, expect = 142
+                 690 output =  28, expect =  28
+                 700 output =  56, expect =  56
+                 710 output = 113, expect = 113
+                 720 output = 226, expect = 226
+                 730 output = 196, expect = 196
+                 740 output = 137, expect = 137
+                 750 output =  18, expect =  18
+                 760 output =  37, expect =  37
+                 770 output =  75, expect =  75
+                 780 output = 151, expect = 151
+                 790 output =  46, expect =  46
+                 800 output =  92, expect =  92
+                 810 output = 184, expect = 184
+                 820 output = 112, expect = 112
+                 830 output = 224, expect = 224
+                 840 output = 192, expect = 192
+                 850 output = 129, expect = 129
+                 860 output =   3, expect =   3
+                 870 output =   6, expect =   6
+                 880 output =  12, expect =  12
+                 890 output =  25, expect =  25
+                 900 output =  50, expect =  50
+                 910 output = 100, expect = 100
+                 920 output = 201, expect = 201
+                 930 output = 146, expect = 146
+                 940 output =  36, expect =  36
+                 950 output =  73, expect =  73
+                 960 output = 147, expect = 147
+                 970 output =  38, expect =  38
+                 980 output =  77, expect =  77
+                 990 output = 155, expect = 155
+                1000 output =  55, expect =  55
+                1010 output = 110, expect = 110
+                1020 output = 220, expect = 220
+                1030 output = 185, expect = 185
+                1040 output = 114, expect = 114
+                1050 output = 228, expect = 228
+                1060 output = 200, expect = 200
+                1070 output = 144, expect = 144
+                1080 output =  32, expect =  32
+                1090 output =  65, expect =  65
+                1100 output = 130, expect = 130
+                1110 output =   5, expect =   5
+                1120 output =  10, expect =  10
+                1130 output =  21, expect =  21
+                1140 output =  43, expect =  43
+                1150 output =  86, expect =  86
+                1160 output = 173, expect = 173
+                1170 output =  91, expect =  91
+                1180 output = 182, expect = 182
+                1190 output = 109, expect = 109
+                1200 output = 218, expect = 218
+                1210 output = 181, expect = 181
+                1220 output = 107, expect = 107
+                1230 output = 214, expect = 214
+                1240 output = 172, expect = 172
+                1250 output =  89, expect =  89
+                1260 output = 178, expect = 178
+                1270 output = 101, expect = 101
+                1280 output = 203, expect = 203
+                1290 output = 150, expect = 150
+                1300 output =  44, expect =  44
+                1310 output =  88, expect =  88
+                1320 output = 176, expect = 176
+                1330 output =  97, expect =  97
+                1340 output = 195, expect = 195
+                1350 output = 135, expect = 135
+                1360 output =  15, expect =  15
+                1370 output =  31, expect =  31
+                1380 output =  62, expect =  62
+                1390 output = 125, expect = 125
+                1400 output = 251, expect = 251
+                1410 output = 246, expect = 246
+                1420 output = 237, expect = 237
+                1430 output = 219, expect = 219
+                1440 output = 183, expect = 183
+                1450 output = 111, expect = 111
+                1460 output = 222, expect = 222
+                1470 output = 189, expect = 189
+                1480 output = 122, expect = 122
+                1490 output = 245, expect = 245
+                1500 output = 235, expect = 235
+                1510 output = 215, expect = 215
+                1520 output = 174, expect = 174
+                1530 output =  93, expect =  93
+                1540 output = 186, expect = 186
+                1550 output = 116, expect = 116
+                1560 output = 232, expect = 232
+                1570 output = 209, expect = 209
+                1580 output = 162, expect = 162
+                1590 output =  68, expect =  68
+                1600 output = 136, expect = 136
+                1610 output =  16, expect =  16
+                1620 output =  33, expect =  33
+                1630 output =  67, expect =  67
+                1640 output = 134, expect = 134
+                1650 output =  13, expect =  13
+                1660 output =  27, expect =  27
+                1670 output =  54, expect =  54
+                1680 output = 108, expect = 108
+                1690 output = 216, expect = 216
+                1700 output = 177, expect = 177
+                1710 output =  99, expect =  99
+                1720 output = 199, expect = 199
+                1730 output = 143, expect = 143
+                1740 output =  30, expect =  30
+                1750 output =  60, expect =  60
+                1760 output = 121, expect = 121
+                1770 output = 243, expect = 243
+                1780 output = 231, expect = 231
+                1790 output = 206, expect = 206
+                1800 output = 156, expect = 156
+                1810 output =  57, expect =  57
+                1820 output = 115, expect = 115
+                1830 output = 230, expect = 230
+                1840 output = 204, expect = 204
+                1850 output = 152, expect = 152
+                1860 output =  49, expect =  49
+                1870 output =  98, expect =  98
+                1880 output = 197, expect = 197
+                1890 output = 139, expect = 139
+                1900 output =  22, expect =  22
+                1910 output =  45, expect =  45
+                1920 output =  90, expect =  90
+                1930 output = 180, expect = 180
+                1940 output = 105, expect = 105
+                1950 output = 210, expect = 210
+                1960 output = 164, expect = 164
+                1970 output =  72, expect =  72
+                1980 output = 145, expect = 145
+                1990 output =  34, expect =  34
+                2000 output =  69, expect =  69
+                2010 output = 138, expect = 138
+                2020 output =  20, expect =  20
+                2030 output =  41, expect =  41
+                2040 output =  82, expect =  82
+                2050 output = 165, expect = 165
+                2060 output =  74, expect =  74
+                2070 output = 149, expect = 149
+                2080 output =  42, expect =  42
+                2090 output =  84, expect =  84
+                2100 output = 169, expect = 169
+                2110 output =  83, expect =  83
+                2120 output = 167, expect = 167
+                2130 output =  78, expect =  78
+                2140 output = 157, expect = 157
+                2150 output =  59, expect =  59
+                2160 output = 119, expect = 119
+                2170 output = 238, expect = 238
+                2180 output = 221, expect = 221
+                2190 output = 187, expect = 187
+                2200 output = 118, expect = 118
+                2210 output = 236, expect = 236
+                2220 output = 217, expect = 217
+                2230 output = 179, expect = 179
+                2240 output = 103, expect = 103
+                2250 output = 207, expect = 207
+                2260 output = 158, expect = 158
+                2270 output =  61, expect =  61
+                2280 output = 123, expect = 123
+                2290 output = 247, expect = 247
+                2300 output = 239, expect = 239
+                2310 output = 223, expect = 223
+                2320 output = 191, expect = 191
+                2330 output = 126, expect = 126
+                2340 output = 253, expect = 253
+                2350 output = 250, expect = 250
+                2360 output = 244, expect = 244
+                2370 output = 233, expect = 233
+                2380 output = 211, expect = 211
+                2390 output = 166, expect = 166
+                2400 output =  76, expect =  76
+                2410 output = 153, expect = 153
+                2420 output =  51, expect =  51
+                2430 output = 102, expect = 102
+                2440 output = 205, expect = 205
+                2450 output = 154, expect = 154
+                2460 output =  53, expect =  53
+                2470 output = 106, expect = 106
+                2480 output = 212, expect = 212
+                2490 output = 168, expect = 168
+                2500 output =  81, expect =  81
+                2510 output = 163, expect = 163
+                2520 output =  70, expect =  70
+                2530 output = 140, expect = 140
+                2540 output =  24, expect =  24
+                2550 output =  48, expect =  48
+                2560 output =  96, expect =  96
+                2570 output = 193, expect = 193
+                2580 output = 131, expect = 131
+
+
+
+
+        ****************************               
+        **                        **       |__||  
+        **  Congratulations !!    **      / O.O  | 
+        **                        **    /_____   | 
+        **  Simulation PASS!!     **   /^ ^ ^ \  |
+        **                        **  |^ ^ ^ ^ |w| 
+        ****************************   \m___m__|_|
+
+
+Simulation complete via $finish(1) at time 2590 NS + 0
+./LFSR_tb.v:54 		$finish;
+xcelium> exit
+TOOL:	xmverilog	20.09-s007: Exiting on Mar 08, 2023 at 21:43:26 CST  (total: 00:00:02)
