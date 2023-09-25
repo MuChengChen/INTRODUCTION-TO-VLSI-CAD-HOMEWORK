@@ -1,0 +1,85 @@
+* File: DFF.pex.netlist
+* Created: Tue May 23 13:18:40 2023
+* Program "Calibre xRC"
+* Version "v2017.4_19.14"
+* 
+.include "DFF.pex.netlist.pex"
+.subckt DFF  clk   D  reset  Q QX vdd  gnd
+* 
+* D	D
+* VDD	VDD
+* GND	GND
+* Q	Q
+* QX	QX
+* RESET	RESET
+* CLK	CLK
+MnMos7 N_NMOS7_MnMos7_d N_CLK_MnMos7_g N_GND_MnMos7_s N_GND_MnMos7_b N_18
++ L=1.8e-07 W=5e-07 AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+MnMos6 N_NMOS6_MnMos6_d N_B_MnMos6_g N_NMOS7_MnMos6_s N_GND_MnMos7_b N_18
++ L=1.8e-07 W=5e-07 AD=1.2875e-13 AS=1.275e-13 PD=5.15e-07 PS=5.1e-07
+MnMos8 N_D1_MnMos8_d N_A_MnMos8_g N_NMOS6_MnMos8_s N_GND_MnMos7_b N_18 L=1.8e-07
++ W=5e-07 AD=2.45e-13 AS=1.2875e-13 PD=1.48e-06 PS=5.15e-07
+MnMos1 N_NMOS1_MnMos1_d N_A_MnMos1_g N_GND_MnMos1_s N_GND_MnMos7_b N_18
++ L=1.8e-07 W=5e-07 AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+MnMos2 N_C_MnMos2_d N_B_MnMos2_g N_NMOS1_MnMos2_s N_GND_MnMos7_b N_18 L=1.8e-07
++ W=5e-07 AD=2.45e-13 AS=1.275e-13 PD=1.48e-06 PS=5.1e-07
+MnMos3 N_NMOS4_MnMos3_d N_C_MnMos3_g N_GND_MnMos3_s N_GND_MnMos7_b N_18
++ L=1.8e-07 W=5e-07 AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+MnMos4 N_NMOS3_MnMos4_d N_CLK_MnMos4_g N_NMOS4_MnMos4_s N_GND_MnMos7_b N_18
++ L=1.8e-07 W=5e-07 AD=1.2875e-13 AS=1.275e-13 PD=5.15e-07 PS=5.1e-07
+MnMos5 N_B_MnMos5_d N_RESET_MnMos5_g N_NMOS3_MnMos5_s N_GND_MnMos7_b N_18
++ L=1.8e-07 W=5e-07 AD=2.45e-13 AS=1.2875e-13 PD=1.48e-06 PS=5.15e-07
+MnMos11 N_NMOS10_MnMos11_d N_RESET_MnMos11_g N_GND_MnMos11_s N_GND_MnMos7_b N_18
++ L=1.8e-07 W=5e-07 AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+MnMos10 N_NMOS9_MnMos10_d N_D_MnMos10_g N_NMOS10_MnMos10_s N_GND_MnMos7_b N_18
++ L=1.8e-07 W=5e-07 AD=1.2875e-13 AS=1.275e-13 PD=5.15e-07 PS=5.1e-07
+MnMos9 N_A_MnMos9_d N_D1_MnMos9_g N_NMOS9_MnMos9_s N_GND_MnMos7_b N_18 L=1.8e-07
++ W=5e-07 AD=2.45e-13 AS=1.2875e-13 PD=1.48e-06 PS=5.15e-07
+MnMos15 N_NMOS15_MnMos15_d N_D1_MnMos15_g N_GND_MnMos15_s N_GND_MnMos7_b N_18
++ L=1.8e-07 W=5e-07 AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+MnMos16 N_NMOS14_MnMos16_d N_RESET_MnMos16_g N_NMOS15_MnMos16_s N_GND_MnMos7_b
++ N_18 L=1.8e-07 W=5e-07 AD=1.2875e-13 AS=1.275e-13 PD=5.15e-07 PS=5.1e-07
+MnMos14 N_QX_MnMos14_d N_Q_MnMos14_g N_NMOS14_MnMos14_s N_GND_MnMos7_b N_18
++ L=1.8e-07 W=5e-07 AD=2.45e-13 AS=1.2875e-13 PD=1.48e-06 PS=5.15e-07
+MnMos12 N_NMOS12_MnMos12_d N_B_MnMos12_g N_GND_MnMos12_s N_GND_MnMos7_b N_18
++ L=1.8e-07 W=5e-07 AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+MnMos13 N_Q_MnMos13_d N_QX_MnMos13_g N_NMOS12_MnMos13_s N_GND_MnMos7_b N_18
++ L=1.8e-07 W=5e-07 AD=2.45e-13 AS=1.275e-13 PD=1.48e-06 PS=5.1e-07
+MpMos7 N_D1_MpMos7_d N_CLK_MpMos7_g N_VDD_MpMos7_s N_VDD_MpMos7_b P_18 L=1.8e-07
++ W=1e-06 AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+MpMos6 N_D1_MpMos6_d N_B_MpMos6_g N_VDD_MpMos6_s N_VDD_MpMos7_b P_18 L=1.8e-07
++ W=1e-06 AD=2.55e-13 AS=2.575e-13 PD=5.1e-07 PS=5.15e-07
+MpMos8 N_D1_MpMos8_d N_A_MpMos8_g N_VDD_MpMos8_s N_VDD_MpMos7_b P_18 L=1.8e-07
++ W=1e-06 AD=4.9e-13 AS=2.575e-13 PD=1.98e-06 PS=5.15e-07
+MpMos1 N_C_MpMos1_d N_A_MpMos1_g N_VDD_MpMos1_s N_VDD_MpMos7_b P_18 L=1.8e-07
++ W=1e-06 AD=2.575e-13 AS=4.9e-13 PD=5.15e-07 PS=1.98e-06
+MpMos2 N_C_MpMos2_d N_B_MpMos2_g N_VDD_MpMos2_s N_VDD_MpMos7_b P_18 L=1.8e-07
++ W=1e-06 AD=2.575e-13 AS=4.9e-13 PD=5.15e-07 PS=1.98e-06
+MpMos3 N_B_MpMos3_d N_C_MpMos3_g N_VDD_MpMos3_s N_VDD_MpMos7_b P_18 L=1.8e-07
++ W=1e-06 AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+MpMos4 N_B_MpMos4_d N_CLK_MpMos4_g N_VDD_MpMos4_s N_VDD_MpMos7_b P_18 L=1.8e-07
++ W=1e-06 AD=2.55e-13 AS=2.575e-13 PD=5.1e-07 PS=5.15e-07
+MpMos5 N_B_MpMos5_d N_RESET_MpMos5_g N_VDD_MpMos5_s N_VDD_MpMos7_b P_18
++ L=1.8e-07 W=1e-06 AD=4.9e-13 AS=2.575e-13 PD=1.98e-06 PS=5.15e-07
+MpMos11 N_A_MpMos11_d N_RESET_MpMos11_g N_VDD_MpMos11_s N_VDD_MpMos7_b P_18
++ L=1.8e-07 W=1e-06 AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+MpMos10 N_A_MpMos10_d N_D_MpMos10_g N_VDD_MpMos10_s N_VDD_MpMos7_b P_18
++ L=1.8e-07 W=1e-06 AD=2.55e-13 AS=2.575e-13 PD=5.1e-07 PS=5.15e-07
+MpMos9 N_A_MpMos9_d N_D1_MpMos9_g N_VDD_MpMos9_s N_VDD_MpMos7_b P_18 L=1.8e-07
++ W=1e-06 AD=4.9e-13 AS=2.575e-13 PD=1.98e-06 PS=5.15e-07
+MpMos15 N_QX_MpMos15_d N_D1_MpMos15_g N_VDD_MpMos15_s N_VDD_MpMos7_b P_18
++ L=1.8e-07 W=1e-06 AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+MpMos16 N_QX_MpMos16_d N_RESET_MpMos16_g N_VDD_MpMos16_s N_VDD_MpMos7_b P_18
++ L=1.8e-07 W=1e-06 AD=2.55e-13 AS=2.575e-13 PD=5.1e-07 PS=5.15e-07
+MpMos14 N_QX_MpMos14_d N_Q_MpMos14_g N_VDD_MpMos14_s N_VDD_MpMos7_b P_18
++ L=1.8e-07 W=1e-06 AD=4.9e-13 AS=2.575e-13 PD=1.98e-06 PS=5.15e-07
+MpMos12 N_Q_MpMos12_d N_B_MpMos12_g N_VDD_MpMos12_s N_VDD_MpMos7_b P_18
++ L=1.8e-07 W=1e-06 AD=2.575e-13 AS=4.9e-13 PD=5.15e-07 PS=1.98e-06
+MpMos13 N_Q_MpMos13_d N_QX_MpMos13_g N_VDD_MpMos13_s N_VDD_MpMos7_b P_18
++ L=1.8e-07 W=1e-06 AD=2.575e-13 AS=4.9e-13 PD=5.15e-07 PS=1.98e-06
+*
+.include "DFF.pex.netlist.DFF.pxi"
+*
+.ends
+*
+*

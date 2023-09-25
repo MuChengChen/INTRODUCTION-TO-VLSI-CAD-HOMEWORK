@@ -1,0 +1,43 @@
+*DFF*
+.subckt DFF clk D reset Q QX vdd gnd  
+
+MpMos1 c a VDD VDD p_18 W=1u L=0.18u
+MpMos2 c b VDD VDD p_18 W=1u L=0.18u
+MnMos1 c a nmos1 GND n_18 W=0.5u L=0.18u
+MnMos2 nmos1 b GND GND n_18 W=0.5u L=0.18u
+
+MpMos3 b c VDD VDD p_18 W=1u L=0.18u
+MpMos4 b clk VDD VDD p_18 W=1u L=0.18u
+MpMos5 b reset VDD VDD p_18 W=1u L=0.18u
+MnMos3 b c nmos3 GND n_18 W=0.5u L=0.18u
+MnMos4 nmos3 clk nmos4 GND n_18 W=0.5u L=0.18u
+MnMos5 nmos4 reset GND GND n_18 W=0.5u L=0.18u
+
+MpMos6 d1 b VDD VDD p_18 W=1u L=0.18u
+MpMos7 d1 clk VDD VDD p_18 W=1u L=0.18u
+MpMos8 d1 a VDD VDD p_18 W=1u L=0.18u
+MnMos6 d1 b nmos6 GND n_18 W=0.5u L=0.18u
+MnMos7 nmos6 clk nmos7 GND n_18 W=0.5u L=0.18u
+MnMos8 nmos7 a GND GND n_18 W=0.5u L=0.18u
+
+MpMos9 a d1 VDD VDD p_18 W=1u L=0.18u
+MpMos10 a D VDD VDD p_18 W=1u L=0.18u
+MpMos11 a reset VDD VDD p_18 W=1u L=0.18u
+MnMos9 a d1 nmos9 GND n_18 W=0.5u L=0.18u
+MnMos10 nmos9 D nmos10 GND n_18 W=0.5u L=0.18u
+MnMos11 nmos10 reset GND GND n_18 W=0.5u L=0.18u
+
+MpMos12 Q b VDD VDD p_18 W=1u L=0.18u
+MpMos13 Q QX VDD VDD p_18 W=1u L=0.18u
+MnMos12 Q b nmos12 GND n_18 W=0.5u L=0.18u
+MnMos13 nmos12 QX GND GND n_18 W=0.5u L=0.18u
+
+MpMos14 QX Q VDD VDD p_18 W=1u L=0.18u
+MpMos15 QX d1 VDD VDD p_18 W=1u L=0.18u
+MpMos16 QX reset VDD VDD p_18 W=1u L=0.18u
+MnMos14 QX Q nmos14 GND n_18 W=0.5u L=0.18u
+MnMos15 nmos14 d1 nmos15 GND n_18 W=0.5u L=0.18u
+MnMos16 nmos15 reset GND GND n_18 W=0.5u L=0.18u
+
+
+.ends
