@@ -1,0 +1,280 @@
+*fourbitsadder*
+.subckt fourbitsadder A0 B0 C0 A1 B1 A2 B2 A3 B3 C4 S0 S1 S2 S3 VDD GND
+
+MpMos1 X1_inv A0 VDD VDD p_18 W=1u L=0.18u
+MnMos1 X1_inv A0 GND GND n_18 W=0.5u L=0.18u
+
+MpMos2 Y1_inv B0 VDD VDD p_18 W=1u L=0.18u
+MnMos2 Y1_inv B0 GND GND n_18 W=0.5u L=0.18u
+
+MpMos3 VDD A0 pmos3 VDD p_18 W=1u L=0.18u
+MpMos4 pmos3 Y1_inv F1 VDD p_18 W=1u L=0.18u
+
+MpMos5 VDD X1_inv pmos5 VDD p_18 W=1u L=0.18u
+MpMos6 pmos5 B0 F1 VDD p_18 W=1u L=0.18u
+
+MnMos3 F1 A0 nmos3 GND n_18 W=0.5u L=0.18u
+MnMos4 nmos3 X1_inv GND GND n_18 W=0.5u L=0.18u
+
+MnMos5 F1 Y1_inv nmos3 GND n_18 W=0.5u L=0.18u
+MnMos6 nmos3 B0 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos7 X2_inv F1 VDD VDD p_18 W=1u L=0.18u
+MnMos7 X2_inv F1 GND GND n_18 W=0.5u L=0.18u
+
+MpMos8 Y2_inv C0 VDD VDD p_18 W=1u L=0.18u
+MnMos8 Y2_inv C0 GND GND n_18 W=0.5u L=0.18u
+
+MpMos9 VDD F1 pmos9 VDD p_18 W=1u L=0.18u
+MpMos10 pmos9 Y2_inv S0 VDD p_18 W=1u L=0.18u
+
+MpMos11 VDD X2_inv pmos11 VDD p_18 W=1u L=0.18u
+MpMos12 pmos11 C0 S0 VDD p_18 W=1u L=0.18u
+
+MnMos9 S0 F1 nmos9 GND n_18 W=0.5u L=0.18u
+MnMos10 nmos9 X2_inv GND GND n_18 W=0.5u L=0.18u
+
+MnMos11 S0 Y2_inv nmos9 GND n_18 W=0.5u L=0.18u
+MnMos12 nmos9 C0 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos13 out_t1 A0 VDD VDD p_18 W=1u L=0.18u
+MpMos14 out_t1 B0 VDD VDD p_18 W=1u L=0.18u
+MnMos13 out_t1 A0 nMos13_D GND n_18 W=0.5u L=0.18u
+MnMos14 nMos13_D B0 GND GND n_18 W=0.5u L=0.18u
+
+MpMos15 out_1 out_t1 VDD VDD p_18 W=1u L=0.18u
+MnMos15 out_1 out_t1 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos16 out_t2 F1 VDD VDD p_18 W=1u L=0.18u
+MpMos17 out_t2 C0 VDD VDD p_18 W=1u L=0.18u
+MnMos16 out_t2 F1 nMos16_D GND n_18 W=0.5u L=0.18u
+MnMos17 nMos16_D C0 GND GND n_18 W=0.5u L=0.18u
+
+MpMos18 out_2 out_t2 VDD VDD p_18 W=1u L=0.18u
+MnMos18 out_2 out_t2 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos19 pMos19_D out_1 VDD VDD p_18 W=1u L=0.18u
+MpMos20 out_3 out_2 pMos19_D VDD p_18 W=1u L=0.18u
+MnMos19 out_3 out_2 GND GND n_18 W=0.5u L=0.18u
+MnMos20 out_3 out_1 GND GND n_18 W=0.5u L=0.18u
+
+MpMos21 C1 out_3 VDD VDD p_18 W=1u L=0.18u
+MnMos21 C1 out_3 GND GND n_18 W=0.5u L=0.18u
+
+
+
+
+
+
+
+
+MpMos22 X3_inv A1 VDD VDD p_18 W=1u L=0.18u
+MnMos22 X3_inv A1 GND GND n_18 W=0.5u L=0.18u
+
+MpMos23 Y3_inv B1 VDD VDD p_18 W=1u L=0.18u
+MnMos23 Y3_inv B1 GND GND n_18 W=0.5u L=0.18u
+
+MpMos24 VDD A1 pmos24 VDD p_18 W=1u L=0.18u
+MpMos25 pmos24 Y3_inv F2 VDD p_18 W=1u L=0.18u
+
+MpMos26 VDD X3_inv pmos26 VDD p_18 W=1u L=0.18u
+MpMos27 pmos26 B1 F2 VDD p_18 W=1u L=0.18u
+
+MnMos24 F2 A1 nmos24 GND n_18 W=0.5u L=0.18u
+MnMos25 nmos24 X3_inv GND GND n_18 W=0.5u L=0.18u
+
+MnMos26 F2 Y3_inv nmos24 GND n_18 W=0.5u L=0.18u
+MnMos27 nmos24 B1 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos28 X4_inv F2 VDD VDD p_18 W=1u L=0.18u
+MnMos28 X4_inv F2 GND GND n_18 W=0.5u L=0.18u
+
+MpMos29 Y4_inv C1 VDD VDD p_18 W=1u L=0.18u
+MnMos29 Y4_inv C1 GND GND n_18 W=0.5u L=0.18u
+
+MpMos30 VDD F2 pmos30 VDD p_18 W=1u L=0.18u
+MpMos31 pmos30 Y4_inv S1 VDD p_18 W=1u L=0.18u
+
+MpMos32 VDD X4_inv pmos32 VDD p_18 W=1u L=0.18u
+MpMos33 pmos32 C1 S1 VDD p_18 W=1u L=0.18u
+
+MnMos30 S1 F2 nmos30 GND n_18 W=0.5u L=0.18u
+MnMos31 nmos30 X4_inv GND GND n_18 W=0.5u L=0.18u
+
+MnMos32 S1 Y4_inv nmos30 GND n_18 W=0.5u L=0.18u
+MnMos33 nmos30 C1 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos34 out_t3 A1 VDD VDD p_18 W=1u L=0.18u
+MpMos35 out_t3 B1 VDD VDD p_18 W=1u L=0.18u
+MnMos34 out_t3 A1 nMos34_D GND n_18 W=0.5u L=0.18u
+MnMos35 nMos34_D B1 GND GND n_18 W=0.5u L=0.18u
+
+MpMos36 out_4 out_t3 VDD VDD p_18 W=1u L=0.18u
+MnMos36 out_4 out_t3 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos37 out_t4 F2 VDD VDD p_18 W=1u L=0.18u
+MpMos38 out_t4 C1 VDD VDD p_18 W=1u L=0.18u
+MnMos37 out_t4 F2 nMos37_D GND n_18 W=0.5u L=0.18u
+MnMos38 nMos37_D C1 GND GND n_18 W=0.5u L=0.18u
+
+MpMos39 out_5 out_t4 VDD VDD p_18 W=1u L=0.18u
+MnMos39 out_5 out_t4 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos40 pMos40_D out_4 VDD VDD p_18 W=1u L=0.18u
+MpMos41 out_6 out_5 pMos40_D VDD p_18 W=1u L=0.18u
+MnMos40 out_6 out_5 GND GND n_18 W=0.5u L=0.18u
+MnMos41 out_6 out_4 GND GND n_18 W=0.5u L=0.18u
+
+MpMos42 C2 out_6 VDD VDD p_18 W=1u L=0.18u
+MnMos42 C2 out_6 GND GND n_18 W=0.5u L=0.18u
+
+
+
+
+
+
+
+MpMos43 X5_inv A2 VDD VDD p_18 W=1u L=0.18u
+MnMos43 X5_inv A2 GND GND n_18 W=0.5u L=0.18u
+
+MpMos44 Y5_inv B2 VDD VDD p_18 W=1u L=0.18u
+MnMos44 Y5_inv B2 GND GND n_18 W=0.5u L=0.18u
+
+MpMos45 VDD A2 pmos45 VDD p_18 W=1u L=0.18u
+MpMos46 pmos45 Y5_inv F3 VDD p_18 W=1u L=0.18u
+
+MpMos47 VDD X5_inv pmos47 VDD p_18 W=1u L=0.18u
+MpMos48 pmos47 B2 F3 VDD p_18 W=1u L=0.18u
+
+MnMos45 F3 A2 nmos45 GND n_18 W=0.5u L=0.18u
+MnMos46 nmos45 X5_inv GND GND n_18 W=0.5u L=0.18u
+
+MnMos47 F3 Y5_inv nmos45 GND n_18 W=0.5u L=0.18u
+MnMos48 nmos45 B2 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos49 X6_inv F3 VDD VDD p_18 W=1u L=0.18u
+MnMos49 X6_inv F3 GND GND n_18 W=0.5u L=0.18u
+
+MpMos50 Y6_inv C2 VDD VDD p_18 W=1u L=0.18u
+MnMos50 Y6_inv C2 GND GND n_18 W=0.5u L=0.18u
+
+MpMos51 VDD F3 pmos51 VDD p_18 W=1u L=0.18u
+MpMos52 pmos51 Y6_inv S2 VDD p_18 W=1u L=0.18u
+
+MpMos53 VDD X6_inv pmos53 VDD p_18 W=1u L=0.18u
+MpMos54 pmos53 C2 S2 VDD p_18 W=1u L=0.18u
+
+MnMos51 S2 F3 nmos51 GND n_18 W=0.5u L=0.18u
+MnMos52 nmos51 X6_inv GND GND n_18 W=0.5u L=0.18u
+
+MnMos53 S2 Y6_inv nmos51 GND n_18 W=0.5u L=0.18u
+MnMos54 nmos51 C2 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos55 out_t5 A2 VDD VDD p_18 W=1u L=0.18u
+MpMos56 out_t5 B2 VDD VDD p_18 W=1u L=0.18u
+MnMos55 out_t5 A2 nMos55_D GND n_18 W=0.5u L=0.18u
+MnMos56 nMos55_D B2 GND GND n_18 W=0.5u L=0.18u
+
+MpMos57 out_7 out_t5 VDD VDD p_18 W=1u L=0.18u
+MnMos57 out_7 out_t5 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos58 out_t6 F3 VDD VDD p_18 W=1u L=0.18u
+MpMos59 out_t6 C2 VDD VDD p_18 W=1u L=0.18u
+MnMos58 out_t6 F3 nMos58_D GND n_18 W=0.5u L=0.18u
+MnMos59 nMos58_D C2 GND GND n_18 W=0.5u L=0.18u
+
+MpMos60 out_8 out_t6 VDD VDD p_18 W=1u L=0.18u
+MnMos60 out_8 out_t6 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos61 pMos61_D out_7 VDD VDD p_18 W=1u L=0.18u
+MpMos62 out_9 out_8 pMos61_D VDD p_18 W=1u L=0.18u
+MnMos61 out_9 out_8 GND GND n_18 W=0.5u L=0.18u
+MnMos62 out_9 out_7 GND GND n_18 W=0.5u L=0.18u
+
+MpMos63 C3 out_9 VDD VDD p_18 W=1u L=0.18u
+MnMos63 C3 out_9 GND GND n_18 W=0.5u L=0.18u
+
+
+
+
+
+
+
+
+MpMos64 X7_inv A3 VDD VDD p_18 W=1u L=0.18u
+MnMos64 X7_inv A3 GND GND n_18 W=0.5u L=0.18u
+
+MpMos65 Y7_inv B3 VDD VDD p_18 W=1u L=0.18u
+MnMos65 Y7_inv B3 GND GND n_18 W=0.5u L=0.18u
+
+MpMos66 VDD A3 pmos66 VDD p_18 W=1u L=0.18u
+MpMos67 pmos66 Y7_inv F4 VDD p_18 W=1u L=0.18u
+
+MpMos68 VDD X7_inv pmos68 VDD p_18 W=1u L=0.18u
+MpMos69 pmos68 B3 F4 VDD p_18 W=1u L=0.18u
+
+MnMos66 F4 A3 nmos66 GND n_18 W=0.5u L=0.18u
+MnMos67 nmos66 X7_inv GND GND n_18 W=0.5u L=0.18u
+
+MnMos68 F4 Y7_inv nmos66 GND n_18 W=0.5u L=0.18u
+MnMos69 nmos66 B3 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos70 X8_inv F4 VDD VDD p_18 W=1u L=0.18u
+MnMos70 X8_inv F4 GND GND n_18 W=0.5u L=0.18u
+
+MpMos71 Y8_inv C3 VDD VDD p_18 W=1u L=0.18u
+MnMos71 Y8_inv C3 GND GND n_18 W=0.5u L=0.18u
+
+MpMos72 VDD F4 pmos72 VDD p_18 W=1u L=0.18u
+MpMos73 pmos72 Y8_inv S3 VDD p_18 W=1u L=0.18u
+
+MpMos74 VDD X8_inv pmos74 VDD p_18 W=1u L=0.18u
+MpMos75 pmos74 C3 S3 VDD p_18 W=1u L=0.18u
+
+MnMos72 S3 F4 nmos72 GND n_18 W=0.5u L=0.18u
+MnMos73 nmos72 X8_inv GND GND n_18 W=0.5u L=0.18u
+
+MnMos74 S3 Y8_inv nmos72 GND n_18 W=0.5u L=0.18u
+MnMos75 nmos72 C3 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos76 out_t7 A3 VDD VDD p_18 W=1u L=0.18u
+MpMos77 out_t7 B3 VDD VDD p_18 W=1u L=0.18u
+MnMos76 out_t7 A3 nMos76_D GND n_18 W=0.5u L=0.18u
+MnMos77 nMos76_D B3 GND GND n_18 W=0.5u L=0.18u
+
+MpMos78 out_10 out_t7 VDD VDD p_18 W=1u L=0.18u
+MnMos78 out_10 out_t7 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos79 out_t8 F4 VDD VDD p_18 W=1u L=0.18u
+MpMos80 out_t8 C3 VDD VDD p_18 W=1u L=0.18u
+MnMos79 out_t8 F4 nMos79_D GND n_18 W=0.5u L=0.18u
+MnMos80 nMos79_D C3 GND GND n_18 W=0.5u L=0.18u
+
+MpMos81 out_11 out_t8 VDD VDD p_18 W=1u L=0.18u
+MnMos81 out_11 out_t8 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos82 pMos82_D out_10 VDD VDD p_18 W=1u L=0.18u
+MpMos83 out_12 out_11 pMos82_D VDD p_18 W=1u L=0.18u
+MnMos82 out_12 out_11 GND GND n_18 W=0.5u L=0.18u
+MnMos83 out_12 out_10 GND GND n_18 W=0.5u L=0.18u
+
+MpMos84 C4 out_12 VDD VDD p_18 W=1u L=0.18u
+MnMos84 C4 out_12 GND GND n_18 W=0.5u L=0.18u
+
+.ends

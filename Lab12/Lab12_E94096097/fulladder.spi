@@ -1,0 +1,68 @@
+*onebitadder*
+.subckt onebitadder A B C S COUT VDD GND
+
+MpMos1 X1_inv A VDD VDD p_18 W=1u L=0.18u
+MnMos1 X1_inv A GND GND n_18 W=0.5u L=0.18u
+
+MpMos2 Y1_inv B VDD VDD p_18 W=1u L=0.18u
+MnMos2 Y1_inv B GND GND n_18 W=0.5u L=0.18u
+
+MpMos3 VDD A pmos3 VDD p_18 W=1u L=0.18u
+MpMos4 pmos3 Y1_inv F1 VDD p_18 W=1u L=0.18u
+
+MpMos5 VDD X1_inv pmos5 VDD p_18 W=1u L=0.18u
+MpMos6 pmos5 B F1 VDD p_18 W=1u L=0.18u
+
+MnMos3 F1 A nmos3 GND n_18 W=0.5u L=0.18u
+MnMos4 nmos3 X1_inv GND GND n_18 W=0.5u L=0.18u
+
+MnMos5 F1 Y1_inv nmos3 GND n_18 W=0.5u L=0.18u
+MnMos6 nmos3 B GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos7 X2_inv F1 VDD VDD p_18 W=1u L=0.18u
+MnMos7 X2_inv F1 GND GND n_18 W=0.5u L=0.18u
+
+MpMos8 Y2_inv C VDD VDD p_18 W=1u L=0.18u
+MnMos8 Y2_inv C GND GND n_18 W=0.5u L=0.18u
+
+MpMos9 VDD F1 pmos9 VDD p_18 W=1u L=0.18u
+MpMos10 pmos9 Y2_inv S VDD p_18 W=1u L=0.18u
+
+MpMos11 VDD X2_inv pmos11 VDD p_18 W=1u L=0.18u
+MpMos12 pmos11 C S VDD p_18 W=1u L=0.18u
+
+MnMos9 S F1 nmos9 GND n_18 W=0.5u L=0.18u
+MnMos10 nmos9 X2_inv GND GND n_18 W=0.5u L=0.18u
+
+MnMos11 S Y2_inv nmos9 GND n_18 W=0.5u L=0.18u
+MnMos12 nmos9 C GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos13 out_t1 A VDD VDD p_18 W=1u L=0.18u
+MpMos14 out_t1 B VDD VDD p_18 W=1u L=0.18u
+MnMos13 out_t1 A nMos13_D GND n_18 W=0.5u L=0.18u
+MnMos14 nMos13_D B GND GND n_18 W=0.5u L=0.18u
+
+MpMos15 out_1 out_t1 VDD VDD p_18 W=1u L=0.18u
+MnMos15 out_1 out_t1 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos16 out_t2 F1 VDD VDD p_18 W=1u L=0.18u
+MpMos17 out_t2 C VDD VDD p_18 W=1u L=0.18u
+MnMos16 out_t2 F1 nMos16_D GND n_18 W=0.5u L=0.18u
+MnMos17 nMos16_D C GND GND n_18 W=0.5u L=0.18u
+
+MpMos18 out_2 out_t2 VDD VDD p_18 W=1u L=0.18u
+MnMos18 out_2 out_t2 GND GND n_18 W=0.5u L=0.18u
+
+
+MpMos19 pMos19_D out_1 VDD VDD p_18 W=1u L=0.18u
+MpMos20 out_3 out_2 pMos19_D VDD p_18 W=1u L=0.18u
+MnMos19 out_3 out_2 GND GND n_18 W=0.5u L=0.18u
+MnMos20 out_3 out_1 GND GND n_18 W=0.5u L=0.18u
+
+MpMos21 COUT out_3 VDD VDD p_18 W=1u L=0.18u
+MnMos21 COUT out_3 GND GND n_18 W=0.5u L=0.18u
+
+.ends
