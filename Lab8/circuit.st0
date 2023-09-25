@@ -1,0 +1,34 @@
+****** HSPICE -- N-2017.12 linux64 (Nov 21 2017) ******
+ Input File: circuit.spi
+ lic:
+ lic: FLEXlm: SDK_11.6.8.3
+ lic: USER:   vlsi23100            HOSTNAME: vlsicad6
+ lic: HOSTID: "5cf3fcba2b50"       PID:      29950
+ lic: Using FLEXlm license file:
+ lic: 26585@lstn
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-mar-2024/2023.03
+ lic: 313(in_use)/450(total) FLOATING license(s) on SERVER 26585@lstn
+ lic:
+ init: begin read circuit files, cpu clock= 1.54E+00
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/ad
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/behave
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/bjt
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/burr_b
+                         rn
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/comlin
+                         ear
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/dio
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/fet
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/lin_te
+                         ch
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/pci
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/signet
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/ti
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/tline
+       option search = /usr/cad/synopsys/hspice/cur/hspice/parts/xilinx
+       option runlvl
+ init: end read circuit files, cpu clock= 1.54E+00 peak memory=     262 mb
+ init: begin check errors, cpu clock= 1.54E+00
+>error          ***** hspice job aborted
+ lic: Release hspice token(s)
